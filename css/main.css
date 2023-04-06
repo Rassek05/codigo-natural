@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* FONTS */
 @font-face {
-  font-family: "CourierNew";
-  src: url("../fonts/CourierNewPSMT.eot");
+  font-family: "roomy";
+  src: url("../fonts/roomy-6.eot");
+  src: url("../fonts/roomy-6.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/CourierNewPSMT.eot?#iefix") format("embedded-opentype"), url("../fonts/CourierNewPSMT.woff") format("woff"), url("../fonts/CourierNewPSMT.ttf") format("truetype"), url("../fonts/CourierNewPSMT.svg#CourierNew") format("svg");
+  src: url("../fonts/roomy-6.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-6.woff") format("woff"), url("../fonts/roomy-6.woff2") format("woff2"), url("../fonts/roomy-6.ttf") format("truetype"), url("../fonts/roomy-6.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -12,10 +13,11 @@
 }
 
 @font-face {
-  font-family: "Courier";
-  src: url("../fonts/Courier-Bold.eot");
+  font-family: "roomy";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/Courier-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Courier-Bold.woff") format("woff"), url("../fonts/Courier-Bold.ttf") format("truetype"), url("../fonts/Courier-Bold.svg#Courier") format("svg");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: bold;
@@ -23,32 +25,11 @@
 }
 
 @font-face {
-  font-family: "Courier";
-  src: url("../fonts/Courier-BoldOblique.eot");
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Regular.eot");
+  src: url("../fonts/RobotoMono-Regular.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/Courier-BoldOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Courier-BoldOblique.woff") format("woff"), url("../fonts/Courier-BoldOblique.ttf") format("truetype"), url("../fonts/Courier-BoldOblique.svg#Courier") format("svg");
-  /* Legacy iOS */
-  font-style: italic;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: "Courier";
-  src: url("../fonts/Courier-Oblique.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Courier-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Courier-Oblique.woff") format("woff"), url("../fonts/Courier-Oblique.ttf") format("truetype"), url("../fonts/Courier-Oblique.svg#Courier") format("svg");
-  /* Legacy iOS */
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: "Courier";
-  src: url("../fonts/Courier.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Courier.eot?#iefix") format("embedded-opentype"), url("../fonts/Courier.woff") format("woff"), url("../fonts/Courier.ttf") format("truetype"), url("../fonts/Courier.svg#Courier") format("svg");
+  src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-Regular.woff") format("woff"), url("../fonts/RobotoMono-Regular.woff2") format("woff2"), url("../fonts/RobotoMono-Regular.ttf") format("truetype"), url("../fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -56,24 +37,26 @@
 }
 
 @font-face {
-  font-family: "CircularProTTBook";
-  src: url("../fonts/CircularProTT-Book.eot");
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Medium.eot");
+  src: url("../fonts/RobotoMono-Medium.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/CircularProTT-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularProTT-Book.woff") format("woff"), url("../fonts/CircularProTT-Book.ttf") format("truetype"), url("../fonts/CircularProTT-Book.svg#CircularProTTBook") format("svg");
+  src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-Medium.woff") format("woff"), url("../fonts/RobotoMono-Medium.woff2") format("woff2"), url("../fonts/RobotoMono-Medium.ttf") format("truetype"), url("../fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: "CircularProTTBold";
-  src: url("../fonts/CircularProTT-Bold.eot");
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-SemiBold.eot");
+  src: url("../fonts/RobotoMono-SemiBold.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/CircularProTT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularProTT-Bold.woff") format("woff"), url("../fonts/CircularProTT-Bold.ttf") format("truetype"), url("../fonts/CircularProTT-Bold.svg#CircularProTTBold") format("svg");
+  src: url("../fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-SemiBold.woff") format("woff"), url("../fonts/RobotoMono-SemiBold.woff2") format("woff2"), url("../fonts/RobotoMono-SemiBold.ttf") format("truetype"), url("../fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
 }
 
@@ -89,7 +72,7 @@ hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 0;
   color: #000;
-  font-family: 'Courier', sans-serif;
+  font-family: 'roomy', 'Courier', sans-serif;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -234,6 +217,8 @@ header nav div {
 }
 
 header nav div p {
+  font-family: 'RobotoMono';
+  font-weight: 500;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -879,6 +864,8 @@ header nav div {
 }
 
 header nav div p {
+  font-family: 'RobotoMono';
+  font-weight: 500;
   text-align: center;
   color: #fff;
   text-transform: uppercase;

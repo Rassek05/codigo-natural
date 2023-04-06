@@ -1,14 +1,16 @@
 /* FONTS */
-$fonts: (CourierNew, CourierNewPSMT, normal, normal), (Courier, Courier-Bold, normal, bold), (Courier, Courier-BoldOblique, italic, bold), (Courier, Courier-Oblique, italic, normal), (Courier, Courier, normal, normal), (CircularProTTBook, CircularProTT-Book, normal, normal), (CircularProTTBold, CircularProTT-Bold, normal, normal)
+$fonts: (roomy, roomy-6, normal, normal), (roomy, roomy-5, normal, bold), (RobotoMono, RobotoMono-Regular, normal, normal), (RobotoMono, RobotoMono-Medium, normal, 500), (RobotoMono, RobotoMono-SemiBold, normal, 700)
 
 @each $fontName, $fontFileName, $fontStyle, $fontWeight in $fonts
     @font-face
         font-family: '#{$fontName}'
         src: url('../fonts/#{$fontFileName}.eot')
+        src: url('../fonts/#{$fontFileName}.otf') format('otf')
         /* IE9 Compat Modes */
         src: url('../fonts/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
         url('../fonts/#{$fontFileName}.woff') format('woff'),
+        url('../fonts/#{$fontFileName}.woff2') format('woff2'),
         /* Modern Browsers */
         url('../fonts/#{$fontFileName}.ttf') format('truetype'),
         /* Safari, Android, iOS */
