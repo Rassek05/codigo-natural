@@ -1,0 +1,316 @@
+/* HEADER */
+header
+
+    nav
+        height: 75px
+        position: fixed
+        top: 0
+        transition: $transition
+        width: 100%
+        z-index: 98
+
+        .logo-mobile
+            background: url(../imgs/logo-white.svg) no-repeat center
+            background-size: 100%
+            display: none
+            height: 28px
+            left: 25px
+            position: absolute
+            text-align: center
+            top: 50%
+            transform: translateY(-50%)
+            width: 106px
+
+            +mobile
+                display: block
+                top: 22.5px
+                transform: unset
+
+        .btn-menu
+            cursor: pointer
+            display: none
+            height: 24px
+            position: absolute
+            right: 25px
+            top: 50%
+            transform: translateY(-50%)
+            width: 36px
+
+            +mobile
+                display: block
+                top: 22.5px
+                transform: unset
+
+            span
+                background-color: #fff
+                display: block
+                margin-bottom: 10px
+                height: 1px
+                transition: $transition
+                width: 36px
+
+                &:last-of-type
+                    margin-bottom: 0
+
+            &.btn-close
+
+                span
+
+                    &:nth-of-type(1)
+                        transform: rotate(39deg)
+                        transform-origin: left top
+
+                    &:nth-of-type(2)
+                        opacity: 0
+
+                    &:nth-of-type(3)
+                        transform: rotate(-39deg)
+                        transform-origin: left top
+
+        &.white
+            background: #fff
+            border-bottom: 1px solid #000
+            border-top: 1px solid #000
+            box-shadow: 0 2px 10px 0px rgba(0,0,0,0.3);
+
+            .logo-mobile
+                background: url(../imgs/logo.svg) no-repeat center
+
+            .btn-menu
+
+                span
+                    background-color: #000
+
+            ul
+
+                li
+
+                    &.logo-nav
+                        display: inline
+                        padding: 0 100px
+                        position: relative
+
+                        +tablet
+                            padding: 0 50px
+
+                        +mobile
+                            display: none
+
+                        a
+                            background: url(../imgs/logo.svg) no-repeat center
+                            background-size: 100%
+                            display: inline-block
+                            height: 28px
+                            left: 50%
+                            position: absolute
+                            text-align: center
+                            top: 50%
+                            transform: translate(-50%, -50%)
+                            width: 106px
+
+                            &:before
+                                content: "• "
+                                opacity: 0
+
+                    a
+                        color: #000 !important
+
+        ul
+            list-style: none
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+            text-align: center
+            width: 100%
+
+            +mobile
+                display: none
+
+            li
+                display: inline
+                margin-right: 30px
+                text-align: center
+
+                &.logo-nav
+                    display: none
+
+                &:last-of-type
+                    margin-right: 0
+
+                a
+                    color: #fff !important
+
+                    &:before
+                        content: "• "
+                        opacity: 0
+
+                    &:hover,
+                    &.active
+                        text-decoration: none !important
+
+                        &:before
+                            content: "• "
+                            opacity: 1
+
+        &.open-mobile
+            background-color: #111
+            height: 100vh
+            top: 0
+            position: fixed
+            width: 100%
+
+            ul
+                display: block
+                left: 50%
+                right: unset
+                transform: translate(-50%, -50%)
+
+                li
+                    display: block
+                    margin-right: 0
+                    margin-bottom: 20px
+
+                    &.logo-nav
+                        display: none
+
+                    &:last-of-type
+                        margin-bottom: 0
+
+                    +mobile
+                        margin-bottom: 15px
+
+                    a
+                        color: #d8d6d8
+                        font-size: 20px
+                        text-align: center
+
+                        +tablet
+                            font-size: 30px
+                            margin-bottom: 15px
+
+                        +mobile
+                            font-size: 18px
+
+                        &:hover, &.active
+                            color: #d9001d
+                            text-decoration: none
+
+        &.open-mobile.white
+            background-color: #fff
+
+    .slider
+        min-height: 400px
+        height: 100vh
+        left: 0
+        position: relative
+        top: 0px
+        width: 100%
+
+        +mobile
+            min-height: unset
+
+        .logo-lg
+            background: url(../imgs/logo-lg.svg) no-repeat center
+            background-size: 100%
+            display: block
+            height: 223px
+            left: 50%
+            position: absolute
+            text-indent: -9999px
+            top: 50%
+            transform: translate(-50%,-50%)
+            width: 343px
+            z-index: 97
+
+            +tablet
+                background-size: 100%
+                height: 195px
+                width: 300px
+
+            +mobile
+                background-size: 100%
+                height: 163px
+                width: 250px
+
+        .slogan
+            bottom: 50px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+
+            h2
+                color: #fff
+                font-size: 18px
+                text-align: center
+
+        .block
+            background-color: #728963
+            left: -100vw
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 22.5%
+            z-index: 97
+
+            +tablet
+                width: 25%
+
+            +mobile
+                top: 52.5%
+                width: 60%
+
+            .block-content
+                max-width: 100%
+                padding: 50px 20px 25px
+                position: relative
+
+                .js-close-block
+                    background: url(../imgs/ico-close.svg) no-repeat center
+                    background-size: 100%
+                    cursor: pointer
+                    display: block
+                    height: 12px
+                    position: absolute
+                    right: 25px
+                    top: 25px
+                    width: 12px
+
+                h3
+                    color: #fff
+                    font-family: 'CircularProTTBold'
+                    font-size: 18px
+                    font-weight: bold
+                    margin-bottom: 25px
+
+                p
+                    color: #fff
+                    font-size: 10px
+
+
+        .bx-viewport, .bx-wrapper
+            position:relative
+            width: 100%
+            height: 100%
+            left: 0
+
+        .bxslider, .bxslider li
+            height: 100%
+
+        .bx-wrapper
+            border: 0
+
+            .bx-viewport
+                border: none
+
+            img
+                width: 100%
+
+            .bx-pager
+                bottom: 50%
+                right: 15px
+                transform: translateY(50%)
+                width: 10px
+
+            .bx-pager-item
+                display: block

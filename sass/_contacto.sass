@@ -1,0 +1,116 @@
+/* CONTACT SECTION */
+// Extends
+%fields
+    appearance: none
+    border: none
+    border-bottom: 1px solid #00000a
+    border-radius: 0
+    display: block
+    outline: 0
+    padding: 5px 5px 1.5px
+    margin-bottom: 30px
+    width: 100%
+
+%error
+    border-bottom: 1px solid #ff0000
+
+section#contacto
+    padding-top: 50px
+
+    h2
+        font-family: 'CircularProTTBold'
+        font-size: 28px
+        font-weight: bold
+        margin-bottom: 50px
+        text-align: center
+
+    #map
+        width: 100%
+
+        +mobile
+            margin-top: 15px
+            height: 400px
+
+    form
+
+        input
+            @extend %fields
+            +placeholder
+                color: #00000a
+
+            &.error
+                @extend %error
+
+            &:nth-of-type(3)
+                margin-bottom: 20px
+
+        textarea
+            @extend %fields
+            background-image: linear-gradient(#fff, #fff 30px, #00000a 30px, #00000a 31px, #fff 31px)
+            background-size: 100% 31px
+            border: none
+            height: 62px
+            margin-bottom: 0
+            line-height: 31px
+            overflow-y: hidden
+            resize: none
+            +placeholder
+                color: #00000a
+
+            &.error
+                @extend %error
+                background-image: linear-gradient(#fff, #fff 30px, #ff0000, 30px, #ff0000 31px, #fff 31px)
+
+        button
+            background-color: transparent
+            border: 1px solid #00000a
+            float: right
+            margin-top: 35px
+            padding: 7.5px 10px
+            transition: $transition
+
+            &:hover
+                background-color: #00000a
+                color: #fff
+
+    #form-response
+        display: inline-block
+        margin-top: 35px
+        opacity: 0
+
+        +small-device
+            display: block
+
+    ul
+        display: block
+        margin-left: -15px
+        margin-top: 15px
+        list-style: none
+        width: 100%
+
+        +mobile
+            margin-top: 15px
+
+        li
+            display: inline-block
+
+            &:first-of-type
+                margin-right: 15px
+
+                +mobile
+                    margin-right: 0
+                    margin-bottom: 15px
+            label
+                display: block
+                font-weight: bold
+                line-height: $line-height
+
+                a
+                    display: inline
+                    font-weight: bold
+            a
+                display: block
+                width: 100%
+
+    p
+        margin-top: 15px

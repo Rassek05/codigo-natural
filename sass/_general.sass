@@ -1,0 +1,79 @@
+/* LOADER */
+#loader
+    background-color: #fff
+    bottom: 0
+    position: fixed
+    height: 100vh
+    left: 0
+    right: 0
+    top: 0
+    width: 100vw
+    z-index: 9999
+
+    #icon
+        left: 50%
+        position: absolute
+        top: 50%
+        transform: translate(-50%,-50%)
+        align-items: stretch
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        height: 70px
+        width: 60px
+
+        div
+            animation: $preload-animation
+            background-color: rgba(#00000a, .99)
+            height: 25px
+            opacity: .4
+            width: 25px
+
+            &:nth-of-type(1)
+                animation-delay: -1s
+
+            &:nth-of-type(2)
+                animation-delay: -.75s
+
+            &:nth-of-type(3)
+                animation-delay: -.25s
+
+            &:nth-of-type(4)
+                animation-delay: -.5s
+
+@keyframes opacity
+    0%
+        opacity: 1
+    100%
+        opacity: .4
+
+a
+
+    &:hover,
+    &:focus
+        color: #00000a
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid
+    margin-left: 0
+    margin-right: 0
+
+.no-gutter>[class^="col-"]
+    padding-left: 0
+    padding-right: 0
+
+.slick-slide
+
+    img
+        height: 480px
+        padding: 0 2px
+
+        +mobile
+            height: 280px
+
+section
+    margin-top: -30px
+
+    &:first-of-type
+        margin-top: 0
