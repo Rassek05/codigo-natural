@@ -55,18 +55,6 @@ $(document).ready(function () {
   // Watch Scroll
   $(document).on('scroll', onScroll)
 
-  // Header
-  $('.js-close-block').click(function () {
-    $('header .block')
-      .animate(
-        {
-          left: '-100vw'
-        },
-        1000
-      )
-      .hide('slow')
-  })
-
   // Nav
   $('.btn-menu').click(function () {
     toggleMenu($(this))
@@ -526,14 +514,6 @@ function createMap() {
 }
 
 function onScroll() {
-  var headerHeight = $('.slider').height()
-
-  if ($(window).scrollTop() > headerHeight - 76) {
-    $('nav').addClass('white')
-  } else {
-    $('nav').removeClass('white')
-  }
-
   var scrollPosition = $(document).scrollTop() + 106
 
   $('nav ul li a').each(function () {
