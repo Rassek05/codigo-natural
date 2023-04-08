@@ -2,12 +2,15 @@
 header
 
     nav
-        height: 120px
+        height: 100px
         position: fixed
         top: 0
         transition: $transition
         width: 100%
         z-index: 98
+
+        +mobile
+            height: 120px
 
         div
             background-color: $primary-color
@@ -31,7 +34,7 @@ header
                     font-weight: 400
 
         .logo-mobile
-            background: url(../imgs/logo-white.svg) no-repeat center
+            background: url(../imgs/logo.png) no-repeat center
             background-size: 100%
             display: none
             height: 28px
@@ -62,6 +65,7 @@ header
             width: 30px
 
             +mobile
+                background-color: #fff
                 display: block
                 top: 72px
                 transform: unset
@@ -119,7 +123,7 @@ header
                             display: none
 
                         a
-                            background: url(../imgs/logo-header.png) no-repeat center
+                            background: url(../imgs/logo.png) no-repeat center
                             background-size: 100%
                             display: inline-block
                             height: 28px

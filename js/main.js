@@ -14,7 +14,7 @@ const browser_mobile =
     navigator.userAgent.toLowerCase()
   )
 //Site Config
-const screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
+let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
 let slider
 
 $(window).load(function () {
@@ -40,8 +40,6 @@ $(window).resize(function () {
       $('#map iframe').css({
         height: $('#form-block').outerHeight()
       })
-      $('section#golf #info').css('height', 'auto')
-      $('section#amenities #info').css('height', 'auto')
     } else {
       $('.match').matchHeight()
     }
