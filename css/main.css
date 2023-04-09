@@ -191,11 +191,7 @@ a:hover, a:focus {
     height: 280px;
   }
 }
-
-section {
-  margin-top: -30px;
-}
-section:first-of-type {
+.slick-slide:first-of-type {
   margin-top: 0;
 }
 
@@ -215,7 +211,15 @@ header nav {
 }
 header nav div {
   background-color: #263E37;
-  padding: 12px 0;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  header nav div {
+    height: 57px;
+  }
 }
 header nav div p {
   font-family: "RobotoMono";
@@ -275,7 +279,7 @@ header nav .btn-menu {
   header nav .btn-menu {
     background-color: #fff;
     display: block;
-    top: 72px;
+    top: 83px;
     transform: unset;
   }
 }
@@ -449,15 +453,32 @@ header .slider {
   }
 }
 header .slider .slogan {
-  bottom: 50px;
+  bottom: 45%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  header .slider .slogan {
+    bottom: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 header .slider .slogan h2 {
   color: #fff;
-  font-size: 18px;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 60px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  header .slider .slogan h2 {
+    display: block;
+    font-size: 40px;
+    padding: 50px;
+  }
 }
 header .slider .block {
   background-color: #728963;
@@ -524,7 +545,6 @@ section#about-us #info {
   display: flex;
   width: 100%;
   height: 230px;
-  padding: 20px 130px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -540,12 +560,12 @@ section#about-us #info {
   section#about-us #info {
     width: 100%;
     height: 240px;
-    padding: 0 20px;
   }
 }
 section#about-us #info .content {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#about-us #info .content {
@@ -553,6 +573,7 @@ section#about-us #info .content {
   }
 }
 section#about-us #info .content p {
+  max-width: 860px;
   text-align: center;
   font-size: 16px;
   padding: 0px 165px;
@@ -564,6 +585,7 @@ section#about-us #info .content p:last-of-type {
 }
 @media (max-width: 767px) {
   section#about-us #info .content p {
+    max-width: 300px;
     line-height: 18px;
     font-size: 13px;
     padding: 15px 15px;
@@ -600,28 +622,31 @@ section#what-we-do {
 }
 section#what-we-do .content {
   display: flex;
-  padding-left: 20px;
+  margin: 30px 0px 120px 40px;
   width: 300px;
   height: 300px;
   flex-direction: column;
   text-align: left;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  section#what-we-do .content {
-    padding: 50px 0 50px 50px;
-  }
-}
 @media (max-width: 767px) {
   section#what-we-do .content {
-    padding: 50px 0 50px 50px;
+    width: 100%;
+    margin: 40px 0px;
+    padding-left: 15px;
+    padding-right: 20px;
   }
 }
 section#what-we-do .content h2 {
   font-size: 26px;
-  width: 310px;
   display: flex;
   font-weight: 700;
+  line-height: 23px;
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  section#what-we-do .content h2 {
+    font-size: 22px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#what-we-do .content h2 {
@@ -634,6 +659,8 @@ section#what-we-do .content .lists {
 }
 section#what-we-do .content .lists ul {
   list-style: none;
+}
+section#what-we-do .content .lists ul li {
   font-family: "RobotoMono";
   font-weight: 400;
 }
@@ -641,8 +668,6 @@ section#what-we-do .content p {
   margin-bottom: 25px;
   max-width: 60%;
   text-align: center;
-  text-align: center;
-  text-align-max-width: 80%;
 }
 section#what-we-do .content p:last-of-type {
   margin-bottom: 0;
@@ -652,9 +677,17 @@ section#what-we-do .content p:last-of-type {
     max-width: 70%;
   }
 }
+@media (max-width: 767px) {
+  section#what-we-do .content p {
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
 /* AMENITIES SECTION */
 section#amenities #image {
-  padding: 50px 0;
+  padding: 0;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#amenities #image {
@@ -666,14 +699,12 @@ section#amenities #image {
     padding: 0;
   }
 }
-section#amenities #image img {
-  margin: 0 auto;
-}
 section#amenities #info {
   background-color: #CDD5B8;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 320px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -699,12 +730,12 @@ section#amenities #info .content {
   }
 }
 section#amenities #info .content h2 {
-  display: flex;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  padding: 20px 320px;
+  padding: 0px 257px;
   text-align: center;
+  max-width: 860px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#amenities #info .content h2 {
@@ -720,8 +751,63 @@ section#amenities #info .content h2 {
     padding-right: 28px;
   }
 }
-section#amenities #info .content ul {
-  margin-left: 15px;
+section#amenities #info .content div {
+  width: 100%;
+  position: relative;
+}
+section#amenities #info .content div h3 {
+  color: #0b0b0b;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+section#amenities .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  section#amenities .text {
+    align-items: center;
+  }
+}
+section#amenities .text h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 30px 0 0 20px;
+}
+@media (max-width: 767px) {
+  section#amenities .text h2 {
+    font-size: 20px;
+    max-width: 250px;
+    max-height: 42px;
+    text-align: start;
+    margin: 30px 30px 10px 5px;
+  }
+  section#amenities .text h2 br {
+    display: none;
+  }
+}
+section#amenities .text p {
+  max-width: 482px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding: 0 85px 0 20px;
+}
+@media (max-width: 767px) {
+  section#amenities .text p {
+    max-width: 290px;
+    max-height: 98px;
+    font-size: 13px;
+    text-align: justify;
+    font-weight: 500;
+    padding: 10px 5px;
+  }
 }
 
 /* HEADER */
@@ -740,7 +826,15 @@ header nav {
 }
 header nav div {
   background-color: #263E37;
-  padding: 12px 0;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  header nav div {
+    height: 57px;
+  }
 }
 header nav div p {
   font-family: "RobotoMono";
@@ -800,7 +894,7 @@ header nav .btn-menu {
   header nav .btn-menu {
     background-color: #fff;
     display: block;
-    top: 72px;
+    top: 83px;
     transform: unset;
   }
 }
@@ -974,15 +1068,32 @@ header .slider {
   }
 }
 header .slider .slogan {
-  bottom: 50px;
+  bottom: 45%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  header .slider .slogan {
+    bottom: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 header .slider .slogan h2 {
   color: #fff;
-  font-size: 18px;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 60px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  header .slider .slogan h2 {
+    display: block;
+    font-size: 40px;
+    padding: 50px;
+  }
 }
 header .slider .block {
   background-color: #728963;
@@ -1044,143 +1155,80 @@ header .slider .bx-wrapper .bx-pager-item {
 }
 
 /* CONTACT SECTION */
-section#contacto form textarea, section#contacto form input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  border-bottom: 1px solid #00000a;
-  border-radius: 0;
-  display: block;
-  outline: 0;
-  padding: 5px 5px 1.5px;
-  margin-bottom: 30px;
+section#contact #info {
+  background-color: #CED6BC;
+  display: flex;
   width: 100%;
-}
-
-section#contacto form textarea.error, section#contacto form input.error {
-  border-bottom: 1px solid #ff0000;
-}
-
-section#contacto {
-  padding-top: 50px;
-}
-section#contacto h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 50px;
+  height: 330px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-section#contacto #map {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  section#contacto #map {
-    margin-top: 15px;
-    height: 400px;
+@media (min-width: 768px) and (max-width: 992px) {
+  section#contact #info {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
   }
 }
-section#contacto form input::-webkit-input-placeholder {
-  color: #00000a;
+@media (max-width: 767px) {
+  section#contact #info {
+    align-items: flex-start;
+    width: 100%;
+    height: 340px;
+  }
 }
-section#contacto form input:-moz-placeholder {
-  color: #00000a;
+section#contact .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
 }
-section#contacto form input::-moz-placeholder {
-  color: #00000a;
+section#contact .content h2 {
+  font-size: 20px;
+  font-weight: 700;
 }
-section#contacto form input:-ms-input-placeholder {
-  color: #00000a;
+@media (max-width: 767px) {
+  section#contact .content h2 {
+    font-size: 20px;
+    padding: 50px 45px 20px 45px;
+    line-height: 12px;
+    max-width: 320px;
+  }
 }
-section#contacto form input:nth-of-type(3) {
-  margin-bottom: 20px;
+section#contact .content h2 a {
+  font-size: 20px;
+  font-weight: 700;
 }
-section#contacto form textarea {
-  background-image: linear-gradient(#fff, #fff 30px, #00000a 30px, #00000a 31px, #fff 31px);
-  background-size: 100% 31px;
-  border: none;
-  height: 62px;
-  margin-bottom: 0;
-  line-height: 31px;
-  overflow-y: hidden;
-  resize: none;
+section#contact .content p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
 }
-section#contacto form textarea::-webkit-input-placeholder {
-  color: #00000a;
+@media (max-width: 767px) {
+  section#contact .content p {
+    padding: 0 53px;
+    max-width: 320px;
+  }
 }
-section#contacto form textarea:-moz-placeholder {
-  color: #00000a;
-}
-section#contacto form textarea::-moz-placeholder {
-  color: #00000a;
-}
-section#contacto form textarea:-ms-input-placeholder {
-  color: #00000a;
-}
-section#contacto form textarea.error {
-  background-image: linear-gradient(#fff, #fff 30px, #ff0000, 30px, #ff0000 31px, #fff 31px);
-}
-section#contacto form button {
-  background-color: green;
-  border: 1px solid #00000a;
-  float: right;
-  margin-top: 35px;
-  padding: 7.5px 10px;
-  transition: 0.5s ease;
-}
-section#contacto form button:hover {
-  background-color: #00000a;
+section#contact .content button {
+  background-color: #263E37;
+  border: 1px solid #263E37;
   color: #fff;
-}
-section#contacto #form-response {
-  display: inline-block;
-  margin-top: 35px;
-  opacity: 0;
-}
-@media (max-width: 320px) {
-  section#contacto #form-response {
-    display: block;
-  }
-}
-section#contacto ul {
-  display: block;
-  margin-left: -15px;
+  font-family: "Roboto";
+  font-size: 8px;
+  font-weight: 500;
+  width: 150px;
+  height: 35px;
   margin-top: 15px;
-  list-style: none;
-  width: 100%;
+  padding: 5px 20px;
 }
 @media (max-width: 767px) {
-  section#contacto ul {
-    margin-top: 15px;
+  section#contact .content button {
+    width: 140px;
+    height: 40px;
+    font-size: 8px;
   }
-}
-section#contacto ul li {
-  display: inline-block;
-}
-section#contacto ul li:first-of-type {
-  margin-right: 15px;
-}
-@media (max-width: 767px) {
-  section#contacto ul li:first-of-type {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-}
-section#contacto ul li label {
-  display: block;
-  font-weight: bold;
-  line-height: 1.5;
-}
-section#contacto ul li label a {
-  display: inline;
-  font-weight: bold;
-}
-section#contacto ul li a {
-  display: block;
-  width: 100%;
-}
-section#contacto p {
-  margin-top: 15px;
 }
 
 /* FOOTER *//*# sourceMappingURL=main.css.map */

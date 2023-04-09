@@ -14,7 +14,13 @@ header
 
         div
             background-color: $primary-color
-            padding: 12px 0
+            height: 45px
+            display: flex
+            align-items: center
+            justify-content: center
+
+            +mobile
+                height: 57px
 
             p
                 font-family: 'RobotoMono'
@@ -67,7 +73,7 @@ header
             +mobile
                 background-color: #fff
                 display: block
-                top: 72px
+                top: 83px
                 transform: unset
 
             span
@@ -238,15 +244,30 @@ header
             min-height: unset
 
         .slogan
-            bottom: 50px
+            bottom: 45%
             position: absolute
             left: 50%
             transform: translateX(-50%)
 
+            +mobile 
+                bottom: 25%
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+
             h2
                 color: #fff
-                font-size: 18px
+                font-size: 65px
+                font-weight: 700
+                line-height: 60px
                 text-align: center
+
+                +mobile 
+
+                    display: block
+                    font-size: 40px
+                    padding: 50px
+
 
         .block
             background-color: #728963

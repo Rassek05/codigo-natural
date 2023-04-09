@@ -30,7 +30,6 @@ $(window).load(function () {
       1000
     )
   }, 500)
-  detectNotAvailableLotes()
 })
 
 $(window).resize(function () {
