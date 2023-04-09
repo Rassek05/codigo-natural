@@ -13,6 +13,7 @@ const browser_mobile =
   /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(
     navigator.userAgent.toLowerCase()
   )
+  
 //Site Config
 let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
 let slider
@@ -127,12 +128,12 @@ $(document).ready(function () {
 })
 
 function onScroll() {
-  var scrollPosition = $(document).scrollTop() + 106
+  let scrollPosition = $(document).scrollTop() + 106
 
   $('nav ul li a').each(function () {
     if ($(this).data('link')) {
-      var link = $(this)
-      var refElement = $(link.data('link'))
+      const link = $(this)
+      const refElement = $(link.data('link'))
       if (
         refElement.position().top <= scrollPosition &&
         refElement.position().top + refElement.height() > scrollPosition
@@ -150,26 +151,4 @@ function onScroll() {
 function toggleMenu(btn) {
   btn.toggleClass('btn-close')
   $('nav').toggleClass('open-mobile')
-}
-
-function detectNotAvailableLotes() {
-  let unAvailableLotes = []
-  $('#lotes-info .lote[data-available="0"]').each(function () {
-    unAvailableLotes.push($(this).data('lote'))
-  })
-
-  if (unAvailableLotes.length > 0) {
-    unAvailableLotes.forEach((element) => {
-      $(`polygon.lote.L${element}`)
-        .css({
-          fill: '#DDE0D5',
-          cursor: 'move'
-        })
-        .addClass('unavailable')
-
-      $(`svg text:contains(${element})`).css({
-        fill: '#DDE0D5'
-      })
-    })
-  }
 }
