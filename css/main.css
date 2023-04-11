@@ -593,7 +593,7 @@ section#about-us #info .content p:last-of-type {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#about-us #info .content p {
-    line-height: 20px;
+    line-height: 18px;
     font-size: 15px;
     padding: 0px 130px;
   }
@@ -1167,7 +1167,6 @@ section#contact #info {
 @media (min-width: 768px) and (max-width: 992px) {
   section#contact #info {
     width: 100%;
-    height: 200px;
     padding: 20px;
   }
 }
@@ -1183,6 +1182,11 @@ section#contact .content {
   flex-direction: column;
   align-items: center;
   width: 400px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  section#contact .content {
+    margin-top: 10px;
+  }
 }
 section#contact .content h2 {
   font-size: 20px;
@@ -1231,4 +1235,61 @@ section#contact .content button {
   }
 }
 
-/* FOOTER *//*# sourceMappingURL=main.css.map */
+/* FOOTER */
+footer .content-footer {
+  width: 100%;
+  height: 270px;
+  background-color: #263E37;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .content-footer {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  footer .content-footer {
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+  }
+}
+footer .content-footer .logo-footer {
+  width: 300px;
+  height: 150px;
+  color: #fff;
+  margin: 15px;
+  background: url(../imgs/logo-footer.png) center no-repeat;
+}
+@media (max-width: 767px) {
+  footer .content-footer .logo-footer {
+    width: 100px;
+    height: 100px;
+  }
+}
+footer .content-footer .text-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+}
+@media (max-width: 767px) {
+  footer .content-footer .text-footer {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+footer .content-footer .text-footer h2 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+}
+footer .content-footer .text-footer p {
+  font-size: 8px;
+  font-weight: 300;
+  line-height: 16px;
+  font-family: "Roboto mono";
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

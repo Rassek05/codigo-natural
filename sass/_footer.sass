@@ -1,3 +1,50 @@
 /* FOOTER */
-footer
-  
+footer 
+  .content-footer 
+    width: 100%
+    height: 270px
+    background-color: #263E37
+    display: flex
+    justify-content: space-between
+
+    +tablet 
+      padding-top: 10px
+
+    +mobile 
+      flex-direction: column
+      height: 400px
+      justify-content: center
+
+    .logo-footer
+      width: 300px
+      height: 150px 
+      color: #fff
+      margin: 15px
+      background: url(../imgs/logo-footer.png)center no-repeat
+
+      +mobile 
+        width: 100px
+        height: 100px
+
+    .text-footer
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      width: 300px
+
+      +mobile
+        width: 200px
+        margin-left: 20px
+
+      h2
+        font-size: 13px
+        font-weight: 500
+        line-height: 22px
+        color: #fff
+
+      p
+        font-size: 8px
+        font-weight: 300
+        line-height: 16px
+        font-family: "Roboto mono"
+        color: #fff
