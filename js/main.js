@@ -13,7 +13,7 @@ const browser_mobile =
   /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(
     navigator.userAgent.toLowerCase()
   )
-  
+
 //Site Config
 let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
 let slider
@@ -35,14 +35,7 @@ $(window).load(function () {
 $(window).resize(function () {
   setTimeout(function () {
     screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
-    // Contact
-    if (screenWidth < 768) {
-      $('#map iframe').css({
-        height: $('#form-block').outerHeight()
-      })
-    } else {
-      $('.match').matchHeight()
-    }
+    $('.match').matchHeight()
   }, 500)
   // BxSlider reload
   slider.reloadSlider()

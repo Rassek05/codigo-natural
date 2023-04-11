@@ -195,6 +195,24 @@ a:hover, a:focus {
   margin-top: 0;
 }
 
+.show-desktop {
+  display: block;
+}
+@media (max-width: 767px) {
+  .show-desktop {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .show-mobile {
+    display: block;
+  }
+}
+
 /* HEADER */
 header nav {
   height: 100px;
@@ -340,6 +358,7 @@ header nav.white ul li.logo-nav a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 106px;
+  font-family: "roboto mono";
 }
 header nav.white ul li.logo-nav a:before {
   content: "• ";
@@ -460,10 +479,10 @@ header .slider .slogan {
 }
 @media (max-width: 767px) {
   header .slider .slogan {
-    bottom: 25%;
+    top: 50%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 }
 header .slider .slogan h2 {
@@ -475,9 +494,10 @@ header .slider .slogan h2 {
 }
 @media (max-width: 767px) {
   header .slider .slogan h2 {
-    display: block;
-    font-size: 40px;
-    padding: 50px;
+    display: flex;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
   }
 }
 header .slider .block {
@@ -685,20 +705,6 @@ section#what-we-do .content p:last-of-type {
 }
 
 /* AMENITIES SECTION */
-section#amenities #image {
-  padding: 0;
-  width: 100%;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#amenities #image {
-    padding: 0;
-  }
-}
-@media (max-width: 767px) {
-  section#amenities #image {
-    padding: 0;
-  }
-}
 section#amenities #info {
   background-color: #CDD5B8;
   display: flex;
@@ -751,16 +757,36 @@ section#amenities #info .content h2 {
     padding-right: 28px;
   }
 }
-section#amenities #info .content div {
-  width: 100%;
+section#amenities .image {
   position: relative;
+  padding: 0;
+  width: 100%;
 }
-section#amenities #info .content div h3 {
-  color: #0b0b0b;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 60px;
-  text-align: center;
+section#amenities .image .filter {
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  opacity: 0.2;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  section#amenities .image {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  section#amenities .image {
+    padding: 0;
+  }
+}
+section#amenities .image .text-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section#amenities .image .text-image h3 {
+  color: #fff;
+  font-size: 20px;
 }
 section#amenities .text {
   display: flex;
@@ -808,6 +834,11 @@ section#amenities .text p {
     font-weight: 500;
     padding: 10px 5px;
   }
+}
+section#amenities .img-fluid-where-we-are {
+  max-width: 100%;
+  height: auto;
+  padding: 15px;
 }
 
 /* HEADER */
@@ -955,6 +986,7 @@ header nav.white ul li.logo-nav a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 106px;
+  font-family: "roboto mono";
 }
 header nav.white ul li.logo-nav a:before {
   content: "• ";
@@ -1075,10 +1107,10 @@ header .slider .slogan {
 }
 @media (max-width: 767px) {
   header .slider .slogan {
-    bottom: 25%;
+    top: 50%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 }
 header .slider .slogan h2 {
@@ -1090,9 +1122,10 @@ header .slider .slogan h2 {
 }
 @media (max-width: 767px) {
   header .slider .slogan h2 {
-    display: block;
-    font-size: 40px;
-    padding: 50px;
+    display: flex;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
   }
 }
 header .slider .block {
@@ -1174,7 +1207,7 @@ section#contact #info {
   section#contact #info {
     align-items: flex-start;
     width: 100%;
-    height: 340px;
+    height: 380px;
   }
 }
 section#contact .content {
@@ -1251,21 +1284,33 @@ footer .content-footer {
 @media (max-width: 767px) {
   footer .content-footer {
     flex-direction: column;
-    height: 400px;
-    justify-content: center;
+    height: 380px;
+    justify-content: start;
+    padding-left: 30px;
+    padding-top: 15px;
   }
 }
 footer .content-footer .logo-footer {
   width: 300px;
   height: 150px;
   color: #fff;
-  margin: 15px;
+  margin: 5px;
   background: url(../imgs/logo-footer.png) center no-repeat;
+  background-size: 130px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .content-footer .logo-footer {
+    background-size: 100px;
+    max-width: 200px;
+    max-height: 115px;
+  }
 }
 @media (max-width: 767px) {
   footer .content-footer .logo-footer {
-    width: 100px;
-    height: 100px;
+    background-size: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0;
   }
 }
 footer .content-footer .text-footer {
@@ -1277,14 +1322,26 @@ footer .content-footer .text-footer {
 @media (max-width: 767px) {
   footer .content-footer .text-footer {
     width: 200px;
-    margin-left: 20px;
+    justify-content: space-between;
+    height: 235px;
   }
 }
 footer .content-footer .text-footer h2 {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   color: #fff;
+}
+footer .content-footer .text-footer h2 a {
+  color: #fff;
+}
+footer .content-footer .text-footer h2 span {
+  display: inline-block;
+  background: url(../imgs/icon-whatsapp.png) center no-repeat;
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
 }
 footer .content-footer .text-footer p {
   font-size: 8px;

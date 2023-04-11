@@ -139,6 +139,8 @@ header
                             top: 50%
                             transform: translate(-50%, -50%)
                             width: 106px
+                            font-family: "roboto mono"
+
 
                             &:before
                                 content: "• "
@@ -250,10 +252,10 @@ header
             transform: translateX(-50%)
 
             +mobile 
-                bottom: 25%
+                top: 50%
                 position: absolute
                 left: 50%
-                transform: translateX(-50%)
+                transform: translate(-50%, -50%)
 
             h2
                 color: #fff
@@ -263,10 +265,10 @@ header
                 text-align: center
 
                 +mobile 
-
-                    display: block
-                    font-size: 40px
-                    padding: 50px
+                    display: flex
+                    font-size: 20px
+                    line-height: 20px
+                    font-weight: 500
 
 
         .block

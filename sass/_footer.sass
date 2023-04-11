@@ -12,19 +12,31 @@ footer
 
     +mobile 
       flex-direction: column
-      height: 400px
-      justify-content: center
+      height: 380px
+      justify-content: start
+      padding-left: 30px
+      padding-top: 15px
+
 
     .logo-footer
       width: 300px
       height: 150px 
       color: #fff
-      margin: 15px
-      background: url(../imgs/logo-footer.png)center no-repeat
+      margin: 5px
+      background: url(../imgs/logo-footer.png) center no-repeat
+      background-size: 130px
+
+      +tablet
+        background-size: 100px
+        max-width: 200px
+        max-height: 115px
+
 
       +mobile 
-        width: 100px
-        height: 100px
+        background-size: 100px
+        max-width: 100px
+        max-height: 100px
+        margin: 0
 
     .text-footer
       display: flex
@@ -34,13 +46,25 @@ footer
 
       +mobile
         width: 200px
-        margin-left: 20px
+        justify-content: space-between
+        height: 235px
 
       h2
         font-size: 13px
-        font-weight: 500
+        font-weight: 400
         line-height: 22px
         color: #fff
+
+        a
+          color: #fff
+
+        span
+          display: inline-block
+          background: url(../imgs/icon-whatsapp.png) center no-repeat
+          background-size: 12px
+          width: 12px
+          height: 12px
+          margin-right: 2px
 
       p
         font-size: 8px
