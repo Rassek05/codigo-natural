@@ -4,17 +4,17 @@ $fonts: (roomy, roomy-6, normal, normal), (roomy, roomy-5, normal, bold), (Robot
 @each $fontName, $fontFileName, $fontStyle, $fontWeight in $fonts
     @font-face
         font-family: '#{$fontName}'
-        src: url('../fonts/#{$fontFileName}.eot')
-        src: url('../fonts/#{$fontFileName}.otf') format('otf')
+        src: url('./fonts/#{$fontFileName}.eot')
+        src: url('./fonts/#{$fontFileName}.otf') format('otf')
         /* IE9 Compat Modes */
-        src: url('../fonts/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
+        src: url('./fonts/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        src: url('../fonts/#{$fontFileName}.woff') format('woff'),
-        src: url('../fonts/#{$fontFileName}.woff2') format('woff2'),
+        src: url('./fonts/#{$fontFileName}.woff') format('woff'),
+        src: url('./fonts/#{$fontFileName}.woff2') format('woff2'),
         /* Modern Browsers */
-        src: url('../fonts/#{$fontFileName}.ttf') format('truetype'),
+        src: url('./fonts/#{$fontFileName}.ttf') format('truetype'),
         /* Safari, Android, iOS */
-        src: url('../fonts/#{$fontFileName}.svg##{$fontName}') format('svg')
+        src: url('./fonts/#{$fontFileName}.svg##{$fontName}') format('svg')
         /* Legacy iOS */
         font-style: #{$fontStyle}
         font-weight: #{$fontWeight}
