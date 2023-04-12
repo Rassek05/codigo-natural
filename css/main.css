@@ -2,17 +2,17 @@
 /* FONTS */
 @font-face {
   font-family: "roomy";
-  src: url("../fonts/roomy-6.eot");
-  src: url("../fonts/roomy-6.otf") format("otf");
+  src: url("./fonts/roomy-6.eot");
+  src: url("./fonts/roomy-6.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/roomy-6.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/roomy-6.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("../fonts/roomy-6.woff") format("woff");
-  src: url("../fonts/roomy-6.woff2") format("woff2");
+  src: url("./fonts/roomy-6.woff") format("woff");
+  src: url("./fonts/roomy-6.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("../fonts/roomy-6.ttf") format("truetype");
+  src: url("./fonts/roomy-6.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("../fonts/roomy-6.svg#roomy") format("svg");
+  src: url("./fonts/roomy-6.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -20,17 +20,17 @@
 }
 @font-face {
   font-family: "roomy";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.otf") format("otf");
+  src: url("./fonts/roomy-5.eot");
+  src: url("./fonts/roomy-5.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/roomy-5.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("../fonts/roomy-5.woff") format("woff");
-  src: url("../fonts/roomy-5.woff2") format("woff2");
+  src: url("./fonts/roomy-5.woff") format("woff");
+  src: url("./fonts/roomy-5.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("../fonts/roomy-5.ttf") format("truetype");
+  src: url("./fonts/roomy-5.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("../fonts/roomy-5.svg#roomy") format("svg");
+  src: url("./fonts/roomy-5.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: bold;
@@ -56,17 +56,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-Regular.eot");
-  src: url("../fonts/RobotoMono-Regular.otf") format("otf");
+  src: url("./fonts/RobotoMono-Regular.eot");
+  src: url("./fonts/RobotoMono-Regular.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-Regular.woff") format("woff");
-  src: url("../fonts/RobotoMono-Regular.woff2") format("woff2");
+  src: url("./fonts/RobotoMono-Regular.woff") format("woff");
+  src: url("./fonts/RobotoMono-Regular.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+  src: url("./fonts/RobotoMono-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
+  src: url("./fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -74,17 +74,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-Medium.eot");
-  src: url("../fonts/RobotoMono-Medium.otf") format("otf");
+  src: url("./fonts/RobotoMono-Medium.eot");
+  src: url("./fonts/RobotoMono-Medium.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-Medium.woff") format("woff");
-  src: url("../fonts/RobotoMono-Medium.woff2") format("woff2");
+  src: url("./fonts/RobotoMono-Medium.woff") format("woff");
+  src: url("./fonts/RobotoMono-Medium.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("../fonts/RobotoMono-Medium.ttf") format("truetype");
+  src: url("./fonts/RobotoMono-Medium.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
+  src: url("./fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 500;
@@ -92,17 +92,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-SemiBold.eot");
-  src: url("../fonts/RobotoMono-SemiBold.otf") format("otf");
+  src: url("./fonts/RobotoMono-SemiBold.eot");
+  src: url("./fonts/RobotoMono-SemiBold.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-SemiBold.woff") format("woff");
-  src: url("../fonts/RobotoMono-SemiBold.woff2") format("woff2");
+  src: url("./fonts/RobotoMono-SemiBold.woff") format("woff");
+  src: url("./fonts/RobotoMono-SemiBold.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("../fonts/RobotoMono-SemiBold.ttf") format("truetype");
+  src: url("./fonts/RobotoMono-SemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
+  src: url("./fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 700;
