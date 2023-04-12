@@ -82,41 +82,6 @@ $(document).ready(function () {
     responsive: true,
     speed: 1000
   })
-
-  // Slick
-  $('.slider-for').each(function () {
-    $(this).slick({
-      autoplay: true,
-      arrows: false,
-      centerMode: true,
-      centerPadding: '60px',
-      dots: true,
-      infinite: true,
-      pauseOnHover: false,
-      slidesToShow: 1,
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    })
-  })
 })
 
 function onScroll() {
