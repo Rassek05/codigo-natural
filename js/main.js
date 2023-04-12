@@ -54,7 +54,11 @@ $(document).ready(function () {
     toggleMenu($(this))
   })
 
-  $('nav ul li a').on('touchstart click', function () {
+  $('.logo-mobile-small').click(function () {
+    toggleMenu($(this))
+  })
+
+  $('nav ul li a, .logo-mobile-small').on('touchstart click', function () {
     if (screenWidth <= 767) {
       setTimeout(function () {
         $('.btn-close').trigger('click')
