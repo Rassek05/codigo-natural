@@ -4,8 +4,8 @@ section#what-we-do
 
     .content
         display: flex
-        margin: 60px 0px 60px 30px
-        width: 300px
+        margin: 60px 0px 60px 40px
+        width: 305px
         height: 300px
         flex-direction: column
         text-align: left
@@ -15,16 +15,15 @@ section#what-we-do
 
         +mobile
             width: 100%
-            margin: 40px 0px
-            padding-left: 15px
-            padding-right: 20px
+            margin: 30px 0px
+            padding: 30px
 
 
         h2
             font-size: 26px
             display: flex
             font-weight: 700
-            line-height: 23px
+            line-height: 24px
             margin-bottom: 50px
 
             +mobile
@@ -43,6 +42,7 @@ section#what-we-do
                 li
                     font-family: 'RobotoMono'
                     font-weight: 400
+                    line-height: 22px
 
         p
             margin-bottom: 25px
@@ -68,8 +68,14 @@ section#what-we-do
         height: 320px
         padding: 50px
 
+        +mobile 
+            padding: 20px
+
         img
             height: 90px
+
+            +mobile 
+                height: 70px
 
     .image
         max-width: 100%
