@@ -37,7 +37,7 @@
   text-rendering: optimizeLegibility;
 }
 @font-face {
-  font-family: "RobotoMono-Light";
+  font-family: "RobotoMono";
   src: url("./fonts/RobotoMono-Light.eot");
   src: url("./fonts/RobotoMono-Light.otf") format("otf");
   /* IE9 Compat Modes */
@@ -48,7 +48,7 @@
   /* Modern Browsers */
   src: url("./fonts/RobotoMono-Light.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/RobotoMono-Light.svg#RobotoMono-Light") format("svg");
+  src: url("./fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 300;
@@ -468,7 +468,7 @@ header nav.open-mobile ul li a {
   color: #d8d6d8;
   font-size: 20px;
   text-align: center;
-  font-family: "RobotoMono-Light";
+  font-family: "RobotoMono";
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -1184,7 +1184,7 @@ header nav.open-mobile ul li a {
   color: #d8d6d8;
   font-size: 20px;
   text-align: center;
-  font-family: "RobotoMono-Light";
+  font-family: "RobotoMono";
   text-transform: uppercase;
   font-weight: 300;
 }
