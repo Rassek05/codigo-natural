@@ -132,6 +132,10 @@ time, mark, audio, video {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div {
+  line-height: 0;
+}
+
 /* LOADER */
 #loader {
   background-color: #CED6BC;
@@ -388,14 +392,16 @@ header nav.white ul li.logo-nav a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 106px;
-  font-family: "RobotoMono";
 }
 header nav.white ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
 }
 header nav.white ul li a {
+  font-family: "RobotoMono";
+  font-weight: 400;
   color: #000 !important;
+  text-transform: uppercase;
 }
 header nav ul {
   list-style: none;
@@ -657,41 +663,44 @@ section#about-us #info .content p:last-of-type {
     padding: 0px 130px;
   }
 }
-section#about-us .image-about-us {
+section#about-us .images {
   margin-top: 20px;
-  display: flex;
 }
-section#about-us .image-about-us div {
-  display: flex;
-}
-section#about-us .image-about-us .img-1 {
-  max-width: 100%;
+@media (min-width: 768px) and (max-width: 992px) {
+  section#about-us .images {
+    padding: 0;
+  }
 }
 @media (max-width: 767px) {
-  section#about-us .image-about-us .img-1 {
+  section#about-us .images {
+    padding: 0;
+  }
+}
+section#about-us .images div:nth-of-type(1) img {
+  width: 100%;
+  padding-right: 25px;
+}
+@media (max-width: 767px) {
+  section#about-us .images div:nth-of-type(1) img {
     max-width: 50%;
     max-height: 195px;
   }
 }
-section#about-us .image-about-us .img-2 {
-  max-width: 100%;
-  padding: 70px;
+section#about-us .images div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#about-us .images div:nth-of-type(2) img {
+  width: 100%;
+  max-width: 75%;
 }
 @media (max-width: 767px) {
-  section#about-us .image-about-us .img-2 {
+  section#about-us .images div:nth-of-type(2) img {
     max-width: 50%;
     padding: 0 0 30px 5px;
     max-height: 190px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#about-us .image-about-us {
-    padding: 0;
-  }
-}
-@media (max-width: 767px) {
-  section#about-us .image-about-us {
-    padding: 0;
   }
 }
 
@@ -777,8 +786,8 @@ section#what-we-do .image {
   max-width: 100%;
 }
 
-/* AMENITIES SECTION */
-section#amenities #info {
+/* WHERE WE ARE SECTION */
+section#where-we-are #info {
   background-color: #CDD5B8;
   display: flex;
   justify-content: center;
@@ -787,12 +796,12 @@ section#amenities #info {
   height: 360px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities #info {
+  section#where-we-are #info {
     height: 300px;
   }
 }
 @media (max-width: 767px) {
-  section#amenities #info {
+  section#where-we-are #info {
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -801,15 +810,15 @@ section#amenities #info {
     margin-top: -3px;
   }
 }
-section#amenities #info .content {
+section#where-we-are #info .content {
   display: flex;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities #info .content {
+  section#where-we-are #info .content {
     padding: 50px;
   }
 }
-section#amenities #info .content h2 {
+section#where-we-are #info .content h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -818,12 +827,12 @@ section#amenities #info .content h2 {
   max-width: 860px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities #info .content h2 {
+  section#where-we-are #info .content h2 {
     padding: 0 150px;
   }
 }
 @media (max-width: 767px) {
-  section#amenities #info .content h2 {
+  section#where-we-are #info .content h2 {
     padding: 0;
     font-size: 24px;
     text-align: left;
@@ -831,35 +840,35 @@ section#amenities #info .content h2 {
     padding-right: 28px;
   }
 }
-section#amenities .image {
+section#where-we-are .image {
   position: relative;
   padding: 0;
   width: 100%;
 }
-section#amenities .image .filter {
+section#where-we-are .image .filter {
   background-color: #000;
   width: 100%;
   position: absolute;
   opacity: 0.2;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities .image {
+  section#where-we-are .image {
     padding: 0;
   }
 }
 @media (max-width: 767px) {
-  section#amenities .image {
+  section#where-we-are .image {
     padding: 0;
   }
 }
-section#amenities .image .text-image {
+section#where-we-are .image .text-image {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
-  section#amenities .image .text-image {
+  section#where-we-are .image .text-image {
     width: 100%;
     height: 100%;
     display: flex;
@@ -867,7 +876,7 @@ section#amenities .image .text-image {
     justify-content: center;
   }
 }
-section#amenities .image .text-image h3 {
+section#where-we-are .image .text-image h3 {
   color: #fff;
   font-size: 43px;
   line-height: 47px;
@@ -875,49 +884,49 @@ section#amenities .image .text-image h3 {
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities .image .text-image h3 {
+  section#where-we-are .image .text-image h3 {
     font-size: 36px;
     line-height: 44px;
   }
 }
 @media (max-width: 767px) {
-  section#amenities .image .text-image h3 {
+  section#where-we-are .image .text-image h3 {
     font-size: 30px;
     line-height: 33px;
     font-weight: 500;
   }
 }
-section#amenities .text {
+section#where-we-are .text {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
   height: 100%;
 }
 @media (max-width: 767px) {
-  section#amenities .text {
+  section#where-we-are .text {
     align-items: center;
   }
 }
-section#amenities .text h2 {
+section#where-we-are .text h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin: 30px 0 0 20px;
 }
 @media (max-width: 767px) {
-  section#amenities .text h2 {
+  section#where-we-are .text h2 {
     font-size: 20px;
     max-width: 250px;
     max-height: 42px;
     text-align: start;
     margin: 30px 30px 10px 5px;
   }
-  section#amenities .text h2 br {
+  section#where-we-are .text h2 br {
     display: none;
   }
 }
-section#amenities .text p {
+section#where-we-are .text p {
   max-width: 482px;
   font-size: 14px;
   font-weight: 700;
@@ -925,14 +934,14 @@ section#amenities .text p {
   padding: 0 85px 0 20px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#amenities .text p {
+  section#where-we-are .text p {
     text-align: start;
     width: 430px;
     font-size: 13px;
   }
 }
 @media (max-width: 767px) {
-  section#amenities .text p {
+  section#where-we-are .text p {
     max-width: 290px;
     max-height: 98px;
     font-size: 13px;
@@ -941,10 +950,22 @@ section#amenities .text p {
     padding: 10px 5px;
   }
 }
-section#amenities .img-fluid-where-we-are {
-  max-width: 100%;
-  height: auto;
-  padding: 15px;
+section#where-we-are .map {
+  position: relative;
+}
+section#where-we-are .map img {
+  position: relative;
+  width: 100%;
+}
+section#where-we-are .map .filter {
+  background-color: #CED6BC;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 1;
+  mix-blend-mode: multiply;
 }
 
 /* HEADER */
@@ -1104,14 +1125,16 @@ header nav.white ul li.logo-nav a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 106px;
-  font-family: "RobotoMono";
 }
 header nav.white ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
 }
 header nav.white ul li a {
+  font-family: "RobotoMono";
+  font-weight: 400;
   color: #000 !important;
+  text-transform: uppercase;
 }
 header nav ul {
   list-style: none;

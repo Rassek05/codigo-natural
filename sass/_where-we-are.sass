@@ -1,5 +1,5 @@
-/* AMENITIES SECTION */
-section#amenities
+/* WHERE WE ARE SECTION */
+section#where-we-are
 
     #info
         background-color: #CDD5B8
@@ -96,9 +96,9 @@ section#amenities
 
     .text
         display: flex
+        flex-direction: column
         align-items: flex-start
         justify-content: space-between
-        flex-direction: column
         height: 100%
 
         +mobile
@@ -120,7 +120,6 @@ section#amenities
                 br
                     display: none
 
-
         p
             max-width: 482px
             font-size: 14px
@@ -141,12 +140,19 @@ section#amenities
                 font-weight: 500
                 padding: 10px 5px
 
-    .img-fluid-where-we-are
-        max-width: 100%
-        height: auto
-        padding: 15px
+    .map
+        position: relative
 
+        img
+            position: relative
+            width: 100%
 
-
-
-
+        .filter
+            background-color: #CED6BC
+            position: absolute
+            width: 100%
+            top: 0
+            left: 0
+            opacity: .8
+            z-index: 1
+            mix-blend-mode: multiply

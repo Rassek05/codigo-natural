@@ -45,6 +45,8 @@ $(document).ready(function () {
   // Watch Scroll
   $(document).on('scroll', onScroll)
 
+  $('.match').matchHeight()
+
   // Nav
   $('.btn-menu').click(function () {
     toggleMenu($(this))
@@ -67,7 +69,7 @@ $(document).ready(function () {
     //scrollTo
     const link = $(this).data('link')
     $(window).scrollTo(link, 1000, {
-      offset: -75
+      offset: -100
     })
   })
 
