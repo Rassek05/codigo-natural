@@ -69,7 +69,7 @@ $(document).ready(function () {
     //scrollTo
     const link = $(this).data('link')
     $(window).scrollTo(link, 1000, {
-      offset: -100
+      offset: screenWidth <= 767 ? -120 : -100
     })
   })
 
