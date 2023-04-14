@@ -2,17 +2,17 @@
 /* FONTS */
 @font-face {
   font-family: "roomy";
-  src: url("./fonts/roomy-6.eot");
-  src: url("./fonts/roomy-6.otf") format("otf");
+  src: url("./sass/fonts/roomy-6.eot");
+  src: url("./sass/fonts/roomy-6.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/roomy-6.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/roomy-6.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/roomy-6.woff") format("woff");
-  src: url("./fonts/roomy-6.woff2") format("woff2");
+  src: url("./sass/fonts/roomy-6.woff") format("woff");
+  src: url("./sass/fonts/roomy-6.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/roomy-6.ttf") format("truetype");
+  src: url("./sass/fonts/roomy-6.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/roomy-6.svg#roomy") format("svg");
+  src: url("./sass/fonts/roomy-6.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -20,17 +20,17 @@
 }
 @font-face {
   font-family: "roomy";
-  src: url("./fonts/roomy-5.eot");
-  src: url("./fonts/roomy-5.otf") format("otf");
+  src: url("./sass/fonts/roomy-5.eot");
+  src: url("./sass/fonts/roomy-5.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/roomy-5.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/roomy-5.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/roomy-5.woff") format("woff");
-  src: url("./fonts/roomy-5.woff2") format("woff2");
+  src: url("./sass/fonts/roomy-5.woff") format("woff");
+  src: url("./sass/fonts/roomy-5.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/roomy-5.ttf") format("truetype");
+  src: url("./sass/fonts/roomy-5.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/roomy-5.svg#roomy") format("svg");
+  src: url("./sass/fonts/roomy-5.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: bold;
@@ -38,17 +38,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./fonts/RobotoMono-Light.eot");
-  src: url("./fonts/RobotoMono-Light.otf") format("otf");
+  src: url("./sass/fonts/RobotoMono-Light.eot");
+  src: url("./sass/fonts/RobotoMono-Light.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/RobotoMono-Light.woff") format("woff");
-  src: url("./fonts/RobotoMono-Light.woff2") format("woff2");
+  src: url("./sass/fonts/RobotoMono-Light.woff") format("woff");
+  src: url("./sass/fonts/RobotoMono-Light.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/RobotoMono-Light.ttf") format("truetype");
+  src: url("./sass/fonts/RobotoMono-Light.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
+  src: url("./sass/fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 300;
@@ -56,17 +56,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./fonts/RobotoMono-Regular.eot");
-  src: url("./fonts/RobotoMono-Regular.otf") format("otf");
+  src: url("./sass/fonts/RobotoMono-Regular.eot");
+  src: url("./sass/fonts/RobotoMono-Regular.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/RobotoMono-Regular.woff") format("woff");
-  src: url("./fonts/RobotoMono-Regular.woff2") format("woff2");
+  src: url("./sass/fonts/RobotoMono-Regular.woff") format("woff");
+  src: url("./sass/fonts/RobotoMono-Regular.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/RobotoMono-Regular.ttf") format("truetype");
+  src: url("./sass/fonts/RobotoMono-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
+  src: url("./sass/fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -74,17 +74,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./fonts/RobotoMono-Medium.eot");
-  src: url("./fonts/RobotoMono-Medium.otf") format("otf");
+  src: url("./sass/fonts/RobotoMono-Medium.eot");
+  src: url("./sass/fonts/RobotoMono-Medium.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/RobotoMono-Medium.woff") format("woff");
-  src: url("./fonts/RobotoMono-Medium.woff2") format("woff2");
+  src: url("./sass/fonts/RobotoMono-Medium.woff") format("woff");
+  src: url("./sass/fonts/RobotoMono-Medium.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/RobotoMono-Medium.ttf") format("truetype");
+  src: url("./sass/fonts/RobotoMono-Medium.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
+  src: url("./sass/fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 500;
@@ -92,17 +92,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./fonts/RobotoMono-SemiBold.eot");
-  src: url("./fonts/RobotoMono-SemiBold.otf") format("otf");
+  src: url("./sass/fonts/RobotoMono-SemiBold.eot");
+  src: url("./sass/fonts/RobotoMono-SemiBold.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("./sass/fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./fonts/RobotoMono-SemiBold.woff") format("woff");
-  src: url("./fonts/RobotoMono-SemiBold.woff2") format("woff2");
+  src: url("./sass/fonts/RobotoMono-SemiBold.woff") format("woff");
+  src: url("./sass/fonts/RobotoMono-SemiBold.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./fonts/RobotoMono-SemiBold.ttf") format("truetype");
+  src: url("./sass/fonts/RobotoMono-SemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
+  src: url("./sass/fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 700;
@@ -608,72 +608,47 @@ section#about-us #info {
   background-color: #fff;
   display: flex;
   width: 100%;
-  height: 320px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin: 60px 0;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#about-us #info {
     width: 100%;
-    height: 200px;
     padding: 20px;
   }
 }
 @media (max-width: 767px) {
   section#about-us #info {
     width: 100%;
-    height: 240px;
+    margin: 60px 30px;
   }
 }
 section#about-us #info .content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#about-us #info .content {
-    padding: 0 30px;
-  }
+  max-width: 436px;
 }
 section#about-us #info .content p {
-  max-width: 860px;
   text-align: center;
   font-size: 16px;
-  padding: 0px 215px;
   font-weight: 700;
   line-height: 22px;
-}
-section#about-us #info .content p:last-of-type {
-  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   section#about-us #info .content p {
     max-width: 300px;
     line-height: 18px;
     font-size: 13px;
-    padding: 15px 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#about-us #info .content p {
     line-height: 18px;
     font-size: 15px;
-    padding: 0px 130px;
-  }
-}
-section#about-us .images {
-  margin-top: 20px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#about-us .images {
-    padding: 0;
-  }
-}
-@media (max-width: 767px) {
-  section#about-us .images {
-    padding: 0;
+    max-width: 400px;
   }
 }
 section#about-us .images div:nth-of-type(1) img {
@@ -714,17 +689,16 @@ section#what-we-do {
 }
 section#what-we-do .content {
   display: flex;
-  margin: 60px 0px 60px 40px;
+  margin: 60px 0px 140px 40px;
   width: 305px;
-  height: 300px;
   flex-direction: column;
   text-align: left;
 }
 @media (max-width: 767px) {
   section#what-we-do .content {
     width: 100%;
-    margin: 30px 0px;
-    padding: 30px;
+    margin: 60px 0;
+    padding: 0 30px;
   }
 }
 section#what-we-do .content h2 {
@@ -748,8 +722,18 @@ section#what-we-do .content .lists {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  section#what-we-do .content .lists {
+    justify-content: start;
+  }
+}
 section#what-we-do .content .lists ul {
   list-style: none;
+}
+@media (max-width: 767px) {
+  section#what-we-do .content .lists ul:first-of-type {
+    margin-right: 60px;
+  }
 }
 section#what-we-do .content .lists ul li {
   font-family: "RobotoMono";
@@ -802,56 +786,35 @@ section#what-we-do .image {
 
 /* WHERE WE ARE SECTION */
 section#where-we-are #info {
-  background-color: #CDD5B8;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 360px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are #info {
-    height: 300px;
-  }
+  padding: 90px 0;
+  background-color: #CDD5B8;
 }
 @media (max-width: 767px) {
   section#where-we-are #info {
     display: flex;
     align-items: flex-start;
     width: 100%;
-    height: 420px;
-    padding: 20px;
-    margin-top: -3px;
+    padding: 20px 30px 160px;
   }
 }
 section#where-we-are #info .content {
   display: flex;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are #info .content {
-    padding: 50px;
-  }
-}
 section#where-we-are #info .content h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  padding: 0px 257px;
   text-align: center;
-  max-width: 860px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are #info .content h2 {
-    padding: 0 150px;
-  }
+  max-width: 340px;
 }
 @media (max-width: 767px) {
   section#where-we-are #info .content h2 {
-    padding: 0;
-    font-size: 24px;
     text-align: left;
-    line-height: 22px;
-    padding-right: 28px;
+    font-size: 24px;
   }
 }
 section#where-we-are .image {
@@ -910,31 +873,24 @@ section#where-we-are .image .text-image h3 {
     font-weight: 500;
   }
 }
-section#where-we-are .text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 100%;
-}
 @media (max-width: 767px) {
   section#where-we-are .text {
     align-items: center;
+    margin: 30px;
+    margin-bottom: 0;
   }
 }
 section#where-we-are .text h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  margin: 30px 0 0 20px;
+  margin-bottom: 15px;
 }
 @media (max-width: 767px) {
   section#where-we-are .text h2 {
     font-size: 20px;
     max-width: 250px;
-    max-height: 42px;
     text-align: start;
-    margin: 30px 30px 10px 5px;
   }
   section#where-we-are .text h2 br {
     display: none;
@@ -944,8 +900,6 @@ section#where-we-are .text p {
   max-width: 482px;
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 30px;
-  padding: 0 85px 0 20px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#where-we-are .text p {
@@ -956,25 +910,22 @@ section#where-we-are .text p {
 }
 @media (max-width: 767px) {
   section#where-we-are .text p {
-    max-width: 290px;
-    max-height: 98px;
+    max-width: unset;
     font-size: 13px;
-    text-align: justify;
     font-weight: 500;
-    padding: 10px 5px;
   }
 }
 section#where-we-are .map {
   position: relative;
 }
+@media (max-width: 767px) {
+  section#where-we-are .map.wrapper {
+    margin: 30px;
+  }
+}
 section#where-we-are .map img {
   position: relative;
   width: 100%;
-}
-@media (max-width: 767px) {
-  section#where-we-are .map img {
-    padding: 20px;
-  }
 }
 section#where-we-are .map .filter {
   background-color: #CED6BC;

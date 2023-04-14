@@ -4,21 +4,16 @@ section#what-we-do
 
     .content
         display: flex
-        margin: 60px 0px 60px 40px
+        margin: 60px 0px 140px 40px
         width: 305px
-        height: 300px
         flex-direction: column
         text-align: left
 
-        +tablet
-            
-
         +mobile
             width: 100%
-            margin: 30px 0px
-            padding: 30px
-
-
+            margin: $mobile-space * 2 0
+            padding: 0 $mobile-space
+    
         h2
             font-size: 26px
             display: flex
@@ -36,8 +31,16 @@ section#what-we-do
             display: flex
             justify-content: space-between
 
+            +mobile
+                justify-content: start
+
             ul
                 list-style: none
+
+                &:first-of-type
+                    
+                    +mobile
+                        margin-right: $mobile-space * 2
 
                 li
                     font-family: 'RobotoMono'
