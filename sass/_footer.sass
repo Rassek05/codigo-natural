@@ -7,6 +7,7 @@ footer
     display: flex
     justify-content: space-between
 
+
     +tablet 
       padding-top: 10px
 
@@ -19,18 +20,17 @@ footer
 
 
     .logo-footer
-      width: 300px
-      height: 150px 
+      width: 130px
+      height: 114px 
       color: #fff
-      margin: 5px
       background: url(../imgs/logo-footer.png) center no-repeat
       background-size: 130px
+      margin: 20px 0 0 50px
 
       +tablet
         background-size: 100px
         max-width: 200px
         max-height: 115px
-
 
       +mobile 
         background-size: 100px
@@ -42,18 +42,17 @@ footer
       display: flex
       flex-direction: column
       justify-content: space-around
-      width: 300px
+      padding-right: 80px
 
-      +mobile
-        width: 200px
-        justify-content: space-between
-        height: 235px
 
       h2
-        font-size: 13px
+        font-size: 14px
         font-weight: 400
         line-height: 22px
         color: #fff
+  
+        +mobile
+          margin-bottom: 120px
 
         a
           color: #fff
