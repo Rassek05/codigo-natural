@@ -289,7 +289,7 @@ header nav div p br {
   }
 }
 header nav .logo-mobile {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
   background-size: 100%;
   display: none;
   height: 28px;
@@ -367,7 +367,7 @@ header nav.bar {
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
 header nav.bar .logo-mobile {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
 }
 header nav.bar .btn-menu span {
   background-color: #263E37;
@@ -387,7 +387,7 @@ header nav.bar ul li.logo-nav {
   }
 }
 header nav.bar ul li.logo-nav a {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
   background-size: 90%;
   display: inline-block;
   height: 56px;
@@ -920,7 +920,7 @@ section#where-we-are .text h2 {
   }
 }
 section#where-we-are .text p {
-  max-width: 482px;
+  max-width: 400px;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -1017,7 +1017,7 @@ header nav div p br {
   }
 }
 header nav .logo-mobile {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
   background-size: 100%;
   display: none;
   height: 28px;
@@ -1095,7 +1095,7 @@ header nav.bar {
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
 header nav.bar .logo-mobile {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
 }
 header nav.bar .btn-menu span {
   background-color: #263E37;
@@ -1115,7 +1115,7 @@ header nav.bar ul li.logo-nav {
   }
 }
 header nav.bar ul li.logo-nav a {
-  background: url(../imgs/logo.png) no-repeat center;
+  background: url(../imgs/logo.svg) no-repeat center;
   background-size: 90%;
   display: inline-block;
   height: 56px;
