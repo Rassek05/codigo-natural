@@ -249,6 +249,9 @@ header nav {
     height: 120px;
   }
 }
+header nav h1 {
+  text-indent: -9999px;
+}
 header nav div {
   background-color: #263E37;
   height: 45px;
@@ -967,6 +970,9 @@ header nav {
   header nav {
     height: 120px;
   }
+}
+header nav h1 {
+  text-indent: -9999px;
 }
 header nav div {
   background-color: #263E37;
