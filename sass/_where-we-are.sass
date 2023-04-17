@@ -11,9 +11,10 @@ section#where-we-are
 
         +mobile
             display: flex
-            align-items: flex-start
+            align-items: start
+            justify-content: start
             width: 100%
-            padding: 20px $mobile-space 160px
+            padding: ($mobile-space * 2) 0 160px $mobile-space
 
         .content
             display: flex
@@ -39,12 +40,6 @@ section#where-we-are
             width: 100%
             position: absolute
             opacity: .2
-
-        +tablet
-            padding: 0
-
-        +mobile
-            padding: 0
         
         .text-image
             position: absolute
@@ -87,12 +82,13 @@ section#where-we-are
             font-size: 20px
             font-weight: 700
             line-height: 24px
-            margin: 20px $mobile-space 400px
+            margin: 20px 30px 400px
 
             +mobile
                 font-size: 20px
                 max-width: 250px
                 text-align: start
+                margin: 0
                 margin-bottom: $mobile-space * .5
 
                 br
@@ -113,6 +109,8 @@ section#where-we-are
                 max-width: unset
                 font-size: 13px
                 font-weight: 500
+                padding: 0 
+
 
     .map
         position: relative

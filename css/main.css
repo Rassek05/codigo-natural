@@ -237,12 +237,15 @@ a:hover, a:focus {
 
 /* HEADER */
 header nav {
-  height: 100px;
+  height: 140px;
   position: fixed;
   top: 0;
   transition: 0.5s ease;
   width: 100%;
   z-index: 98;
+}
+header nav.scrolled {
+  height: 100px;
 }
 @media (max-width: 767px) {
   header nav {
@@ -339,7 +342,7 @@ header nav .btn-menu {
   }
 }
 header nav .btn-menu span {
-  background-color: #fff;
+  background-color: transparent;
   display: block;
   margin-bottom: 10px;
   height: 1px;
@@ -357,34 +360,34 @@ header nav .btn-menu.btn-close span:nth-of-type(2) {
   transform: rotate(-40deg);
   transform-origin: left 0;
 }
-header nav.white {
+header nav.bar {
   background: #fff;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
-header nav.white .logo-mobile {
+header nav.bar .logo-mobile {
   background: url(../imgs/logo.png) no-repeat center;
 }
-header nav.white .btn-menu span {
+header nav.bar .btn-menu span {
   background-color: #263E37;
 }
-header nav.white ul li.logo-nav {
+header nav.bar ul li.logo-nav {
   display: inline;
   padding: 0 100px;
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header nav.white ul li.logo-nav {
+  header nav.bar ul li.logo-nav {
     padding: 0 50px;
   }
 }
 @media (max-width: 767px) {
-  header nav.white ul li.logo-nav {
+  header nav.bar ul li.logo-nav {
     display: none;
   }
 }
-header nav.white ul li.logo-nav a {
+header nav.bar ul li.logo-nav a {
   background: url(../imgs/logo.png) no-repeat center;
   background-size: 100%;
   display: inline-block;
@@ -396,11 +399,11 @@ header nav.white ul li.logo-nav a {
   transform: translate(-50%, -50%);
   width: 106px;
 }
-header nav.white ul li.logo-nav a:before {
+header nav.bar ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
 }
-header nav.white ul li a {
+header nav.bar ul li a {
   font-family: "RobotoMono";
   font-weight: 400;
   color: #000 !important;
@@ -502,7 +505,7 @@ header nav.open-mobile .logo-mobile {
 header nav.open-mobile .logo-mobile-small {
   display: block;
 }
-header nav.open-mobile.white {
+header nav.open-mobile.bar {
   background-color: #fff;
 }
 header .slider {
@@ -813,9 +816,10 @@ section#where-we-are #info {
 @media (max-width: 767px) {
   section#where-we-are #info {
     display: flex;
-    align-items: flex-start;
+    align-items: start;
+    justify-content: start;
     width: 100%;
-    padding: 20px 30px 160px;
+    padding: 60px 0 160px 30px;
   }
 }
 section#where-we-are #info .content {
@@ -844,16 +848,6 @@ section#where-we-are .image .filter {
   width: 100%;
   position: absolute;
   opacity: 0.2;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are .image {
-    padding: 0;
-  }
-}
-@media (max-width: 767px) {
-  section#where-we-are .image {
-    padding: 0;
-  }
 }
 section#where-we-are .image .text-image {
   position: absolute;
@@ -908,6 +902,7 @@ section#where-we-are .text h2 {
     font-size: 20px;
     max-width: 250px;
     text-align: start;
+    margin: 0;
     margin-bottom: 15px;
   }
   section#where-we-are .text h2 br {
@@ -932,6 +927,7 @@ section#where-we-are .text p {
     max-width: unset;
     font-size: 13px;
     font-weight: 500;
+    padding: 0;
   }
 }
 section#where-we-are .map {
@@ -959,12 +955,15 @@ section#where-we-are .map .filter {
 
 /* HEADER */
 header nav {
-  height: 100px;
+  height: 140px;
   position: fixed;
   top: 0;
   transition: 0.5s ease;
   width: 100%;
   z-index: 98;
+}
+header nav.scrolled {
+  height: 100px;
 }
 @media (max-width: 767px) {
   header nav {
@@ -1061,7 +1060,7 @@ header nav .btn-menu {
   }
 }
 header nav .btn-menu span {
-  background-color: #fff;
+  background-color: transparent;
   display: block;
   margin-bottom: 10px;
   height: 1px;
@@ -1079,34 +1078,34 @@ header nav .btn-menu.btn-close span:nth-of-type(2) {
   transform: rotate(-40deg);
   transform-origin: left 0;
 }
-header nav.white {
+header nav.bar {
   background: #fff;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
-header nav.white .logo-mobile {
+header nav.bar .logo-mobile {
   background: url(../imgs/logo.png) no-repeat center;
 }
-header nav.white .btn-menu span {
+header nav.bar .btn-menu span {
   background-color: #263E37;
 }
-header nav.white ul li.logo-nav {
+header nav.bar ul li.logo-nav {
   display: inline;
   padding: 0 100px;
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header nav.white ul li.logo-nav {
+  header nav.bar ul li.logo-nav {
     padding: 0 50px;
   }
 }
 @media (max-width: 767px) {
-  header nav.white ul li.logo-nav {
+  header nav.bar ul li.logo-nav {
     display: none;
   }
 }
-header nav.white ul li.logo-nav a {
+header nav.bar ul li.logo-nav a {
   background: url(../imgs/logo.png) no-repeat center;
   background-size: 100%;
   display: inline-block;
@@ -1118,11 +1117,11 @@ header nav.white ul li.logo-nav a {
   transform: translate(-50%, -50%);
   width: 106px;
 }
-header nav.white ul li.logo-nav a:before {
+header nav.bar ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
 }
-header nav.white ul li a {
+header nav.bar ul li a {
   font-family: "RobotoMono";
   font-weight: 400;
   color: #000 !important;
@@ -1224,7 +1223,7 @@ header nav.open-mobile .logo-mobile {
 header nav.open-mobile .logo-mobile-small {
   display: block;
 }
-header nav.open-mobile.white {
+header nav.open-mobile.bar {
   background-color: #fff;
 }
 header .slider {

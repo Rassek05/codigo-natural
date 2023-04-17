@@ -91,7 +91,14 @@ $(document).ready(function () {
 })
 
 function onScroll() {
-  let scrollPosition = $(document).scrollTop() + 106
+  let scrollPosition = $(document).scrollTop() + 145
+  let headerHeight = $('header').height() - 145
+
+  if ($(window).scrollTop() > headerHeight && screenWidth > 767) {
+    $('nav').addClass('scrolled')
+  } else {
+    $('nav').removeClass('scrolled')
+  }
 
   $('nav ul li a').each(function () {
     if ($(this).data('link')) {

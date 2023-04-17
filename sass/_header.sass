@@ -2,12 +2,15 @@
 header
 
     nav
-        height: 100px
+        height: 140px
         position: fixed
         top: 0
         transition: $transition
         width: 100%
         z-index: 98
+
+        &.scrolled
+            height: 100px
 
         +mobile
             height: 120px
@@ -92,7 +95,7 @@ header
                 transform: unset
 
             span
-                background-color: #fff
+                background-color: transparent
                 display: block
                 margin-bottom: 10px
                 height: 1px
@@ -114,7 +117,7 @@ header
                         transform: rotate(-40deg)
                         transform-origin: left 0
 
-        &.white
+        &.bar
             background: #fff
             border-bottom: 1px solid #000
             border-top: 1px solid #000
@@ -255,7 +258,7 @@ header
             .logo-mobile-small
                 display: block
 
-        &.open-mobile.white
+        &.open-mobile.bar
             background-color: #fff
 
     .slider
