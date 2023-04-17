@@ -95,7 +95,7 @@ $(document).ready(function () {
 
 function onScroll() {
   let scrollPosition = $(document).scrollTop() + 145
-  let headerHeight = $('header').height() - 145
+  let headerHeight = $('header').height() - 125
 
   if ($(window).scrollTop() > headerHeight && screenWidth > 767) {
     $('nav').addClass('scrolled')
