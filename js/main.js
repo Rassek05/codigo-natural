@@ -36,6 +36,9 @@ $(window).resize(function () {
   setTimeout(function () {
     screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
     $('.match').matchHeight()
+    if (screenWidth <= 767) {
+      $('nav').removeClass('scrolled')
+    }
   }, 500)
   // BxSlider reload
   slider.reloadSlider()
