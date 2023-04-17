@@ -940,6 +940,14 @@ section#where-we-are .text p {
     margin: 0;
   }
 }
+section#where-we-are #map {
+  height: calc(100vh - 100px);
+}
+@media (max-width: 767px) {
+  section#where-we-are #map {
+    height: calc(100vh - 120px);
+  }
+}
 section#where-we-are .map {
   position: relative;
 }
