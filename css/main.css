@@ -803,9 +803,7 @@ section#what-we-do .wrapper .icons .icon span {
 section#what-we-do .image {
   max-width: 100%;
 }
-
-/* WHERE WE ARE SECTION */
-section#where-we-are #info {
+section#what-we-do #info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -814,7 +812,7 @@ section#where-we-are #info {
   background-color: #CDD5B8;
 }
 @media (max-width: 767px) {
-  section#where-we-are #info {
+  section#what-we-do #info {
     display: flex;
     align-items: start;
     justify-content: start;
@@ -822,10 +820,10 @@ section#where-we-are #info {
     padding: 60px 0 160px 30px;
   }
 }
-section#where-we-are #info .content {
+section#what-we-do #info .info-content {
   display: flex;
 }
-section#where-we-are #info .content h2 {
+section#what-we-do #info .info-content h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -833,30 +831,30 @@ section#where-we-are #info .content h2 {
   max-width: 340px;
 }
 @media (max-width: 767px) {
-  section#where-we-are #info .content h2 {
+  section#what-we-do #info .info-content h2 {
     text-align: left;
     font-size: 24px;
   }
 }
-section#where-we-are .image {
+section#what-we-do .image {
   position: relative;
   padding: 0;
   width: 100%;
 }
-section#where-we-are .image .filter {
+section#what-we-do .image .filter {
   background-color: #000;
   width: 100%;
   position: absolute;
   opacity: 0.2;
 }
-section#where-we-are .image .text-image {
+section#what-we-do .image .text-image {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
-  section#where-we-are .image .text-image {
+  section#what-we-do .image .text-image {
     width: 100%;
     height: 100%;
     display: flex;
@@ -864,7 +862,7 @@ section#where-we-are .image .text-image {
     justify-content: center;
   }
 }
-section#where-we-are .image .text-image h3 {
+section#what-we-do .image .text-image h3 {
   color: #fff;
   font-size: 43px;
   line-height: 47px;
@@ -872,18 +870,20 @@ section#where-we-are .image .text-image h3 {
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are .image .text-image h3 {
+  section#what-we-do .image .text-image h3 {
     font-size: 36px;
     line-height: 44px;
   }
 }
 @media (max-width: 767px) {
-  section#where-we-are .image .text-image h3 {
+  section#what-we-do .image .text-image h3 {
     font-size: 30px;
     line-height: 33px;
     font-weight: 500;
   }
 }
+
+/* WHERE WE ARE SECTION */
 @media (max-width: 767px) {
   section#where-we-are .text {
     align-items: center;
