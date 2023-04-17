@@ -1479,9 +1479,14 @@ footer .content-footer .text-footer h2 span {
   margin-right: 2px;
 }
 footer .content-footer .text-footer p {
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 16px;
   font-family: "Roboto mono";
   color: #fff;
+}
+@media (max-width: 767px) {
+  footer .content-footer .text-footer p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
