@@ -800,6 +800,12 @@ section#what-we-do .wrapper .icons .icon img {
 }
 section#what-we-do .wrapper .icons .icon span {
   text-align: center;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  section#what-we-do .wrapper .icons .icon span {
+    font-size: 12px;
+  }
 }
 section#what-we-do .image {
   max-width: 100%;
