@@ -41,7 +41,6 @@ $(window).resize(function () {
     setMainSlider()
   }, 500)
 
-  console.log({sliders});
   // BxSlider reload
   sliders.forEach(slider => slider.reloadSlider())
 })
