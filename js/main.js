@@ -9,12 +9,8 @@ const isMobile = (function (a) {
     )
   )
 })(navigator.userAgent || navigator.vendor || window.opera)
-const browser_mobile =
-  /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(
-    navigator.userAgent.toLowerCase()
-  )
+const browser_mobile = /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())
 
-//Site Config
 let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
 let slider
 
