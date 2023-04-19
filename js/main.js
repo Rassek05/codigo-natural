@@ -15,7 +15,7 @@ const browser_mobile =
   )
 
 let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
-let sliders = []
+const sliders = []
 
 $(window).load(function () {
   $(window).scrollTo(0, 250)
@@ -38,6 +38,9 @@ $(window).load(function () {
 
   onScroll()
   setMainSlider()
+  
+  // BxSlider reload
+  sliders.forEach((slider) => slider.reloadSlider())
 })
 
 $(window).resize(function () {
