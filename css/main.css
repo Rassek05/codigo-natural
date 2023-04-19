@@ -138,56 +138,35 @@ div {
 
 /* LOADER */
 #loader {
-  background-color: #CED6BC;
-  bottom: 0;
   position: fixed;
-  height: 100vh;
-  left: 0;
-  right: 0;
   top: 0;
+  left: 0;
+  height: 100vh;
   width: 100vw;
-  z-index: 9999;
+  background-color: #CED6BC;
+  z-index: 9997;
 }
-#loader #icon {
-  left: 50%;
+#loader .wall {
+  background-color: #CED6BC;
   position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9998;
+}
+#loader .logo {
+  position: absolute;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  align-items: stretch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 70px;
-  width: 60px;
-}
-#loader #icon div {
-  animation: opacity 1s infinite;
-  background-color: rgba(0, 0, 10, 0.99);
-  height: 25px;
-  opacity: 0.4;
-  width: 25px;
-}
-#loader #icon div:nth-of-type(1) {
-  animation-delay: -1s;
-}
-#loader #icon div:nth-of-type(2) {
-  animation-delay: -0.75s;
-}
-#loader #icon div:nth-of-type(3) {
-  animation-delay: -0.25s;
-}
-#loader #icon div:nth-of-type(4) {
-  animation-delay: -0.5s;
+  z-index: 9999;
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.4;
-  }
+body.unload {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
+
 a:hover, a:focus {
   color: #263E37;
 }
