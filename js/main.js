@@ -18,9 +18,15 @@ let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
 let sliders = []
 
 $(window).load(function () {
-  $('#loader').delay(350).fadeOut('slow')
-  $('#icon').fadeOut('slow')
-  onScroll()
+  $(window).scrollTo(0, 250)
+  setTimeout(() => {
+    $('body').removeClass('unload')
+  }, 1600)
+
+  $('#loader').delay(1000).slideUp('slow')
+  $('.wall').delay(1000).fadeOut('slow')
+  $('.logo').delay(750).fadeOut('slow')
+
   setTimeout(function () {
     $('header .block').animate(
       {
@@ -30,6 +36,7 @@ $(window).load(function () {
     )
   }, 500)
 
+  onScroll()
   setMainSlider()
 })
 
