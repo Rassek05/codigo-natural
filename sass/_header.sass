@@ -260,16 +260,13 @@ header
         &.open-mobile.bar
             background-color: #fff
 
-    .slider
+    .main-slider
         min-height: 400px
         height: 100vh
         left: 0
         position: relative
         top: 0px
         width: 100%
-
-        +mobile
-            min-height: unset
 
         .slogan
             bottom: 45%
@@ -296,59 +293,76 @@ header
                     line-height: 28px
                     font-weight: 500
 
+        .slider
+            min-height: 400px
+            height: 100vh
+            left: 0
+            position: relative
+            top: 0px
+            width: 100%
 
-        .block
-            background-color: #728963
-            left: -100vw
-            position: absolute
-            top: 50%
-            transform: translateY(-50%)
-            width: 22.5%
-            z-index: 97
-
-            +tablet
-                width: 25%
+            &.hidden
+                display: none
 
             +mobile
-                top: 52.5%
-                width: 60%
+                min-height: unset
 
-                h3
-                    color: #fff
-                    font-size: 18px
-                    font-weight: bold
-                    margin-bottom: 25px
+            .block
+                background-color: #728963
+                left: -100vw
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                width: 22.5%
+                z-index: 97
 
-                p
-                    color: #fff
-                    font-size: 10px
+                +tablet
+                    width: 25%
 
-        .bx-viewport, .bx-wrapper
-            position: relative
-            width: 100%
-            height: 100%
-            left: 0
+                +mobile
+                    top: 52.5%
+                    width: 60%
 
-        .bxslider, .bxslider li
-            height: 100%
+                    h3
+                        color: #fff
+                        font-size: 18px
+                        font-weight: bold
+                        margin-bottom: 25px
 
-        .bx-wrapper
-            border: 0
+                    p
+                        color: #fff
+                        font-size: 10px
 
-            .bx-pager.bx-default-pager 
-                
-                a
-                    opacity: 1
-
-                    &.active
-                        background-color: transparent
-                        border: 1px solid #fff
-
-            .bx-viewport
-                border: none
-
-            img
+            .bx-viewport, .bx-wrapper
+                position: relative
                 width: 100%
+                height: 100%
+                left: 0
 
-            .bx-pager-item
-                padding: 0 5px
+            .bxslider
+                height: 100%
+                
+                li
+                    height: 100%
+
+
+            .bx-wrapper
+                border: 0
+
+                .bx-pager.bx-default-pager 
+                    
+                    a
+                        opacity: 1
+
+                        &.active
+                            background-color: transparent
+                            border: 1px solid #fff
+
+                .bx-viewport
+                    border: none
+
+                img
+                    width: 100%
+
+                .bx-pager-item
+                    padding: 0 5px

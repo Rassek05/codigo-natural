@@ -12,7 +12,7 @@ const isMobile = (function (a) {
 const browser_mobile = /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())
 
 let screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width
-let slider
+let sliders = []
 
 $(window).load(function () {
   $('#loader').delay(350).fadeOut('slow')
@@ -26,6 +26,8 @@ $(window).load(function () {
       1000
     )
   }, 500)
+
+  setMainSlider()
 })
 
 $(window).resize(function () {
@@ -35,9 +37,12 @@ $(window).resize(function () {
     if (screenWidth <= 767) {
       $('nav').removeClass('scrolled')
     }
+
+    setMainSlider()
   }, 500)
+
   // BxSlider reload
-  slider.reloadSlider()
+  sliders.forEach(slider => slider.reloadSlider())
 })
 
 $(document).ready(function () {
@@ -78,8 +83,8 @@ $(document).ready(function () {
     $(this).backstretch($(this).attr('data-bg'))
   })
 
-  slider = $('.bxslider').bxSlider({
-    auto: $('.bxslider li').length > 1 ? true : false,
+  const slider = $('.bxslider.desktop').bxSlider({
+    auto: $('.bxslider.desktop li').length > 1 ? true : false,
     controls: false,
     keyboardEnabled: true,
     mode: 'horizontal',
@@ -89,6 +94,19 @@ $(document).ready(function () {
     speed: 1000
   })
 
+  const sliderMobile = $('.bxslider.mobile').bxSlider({
+    auto: $('.bxslider.mobile li').length > 1 ? true : false,
+    controls: false,
+    keyboardEnabled: true,
+    mode: 'horizontal',
+    pager: true,
+    pause: 4000,
+    responsive: true,
+    speed: 1000
+  })
+
+  sliders.push(slider)
+  sliders.push(sliderMobile)
   createMap()
 })
 
@@ -123,6 +141,17 @@ function onScroll() {
 function toggleMenu(btn) {
   btn.toggleClass('btn-close')
   $('nav').toggleClass('open-mobile')
+}
+
+function setMainSlider() {
+  if (screenWidth <= 767) {
+    $('.slider.mobile').removeClass('hidden')
+    $('.slider.desktop').addClass('hidden')
+    return
+  }
+
+  $('.slider.mobile').addClass('hidden')
+  $('.slider.desktop').removeClass('hidden')
 }
 
 function createMap() {
