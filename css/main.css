@@ -3,17 +3,7 @@
 @font-face {
   font-family: "roomy";
   src: url("../fonts/roomy-6.eot");
-  src: url("../fonts/roomy-6.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/roomy-6.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/roomy-6.woff") format("woff");
-  src: url("../fonts/roomy-6.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/roomy-6.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/roomy-6.svg#roomy") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roomy-6.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-6.otf") format("otf"), url("../fonts/roomy-6.svg#roomy-6") format("svg"), url("../fonts/roomy-6.ttf") format("truetype"), url("../fonts/roomy-6.woff") format("woff"), url("../fonts/roomy-6.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -21,17 +11,7 @@
 @font-face {
   font-family: "roomy";
   src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/roomy-5.woff") format("woff");
-  src: url("../fonts/roomy-5.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/roomy-5.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/roomy-5.svg#roomy") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -39,17 +19,7 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../fonts/RobotoMono-Light.eot");
-  src: url("../fonts/RobotoMono-Light.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-Light.woff") format("woff");
-  src: url("../fonts/RobotoMono-Light.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/RobotoMono-Light.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-Light.otf") format("otf"), url("../fonts/RobotoMono-Light.svg#RobotoMono-Light") format("svg"), url("../fonts/RobotoMono-Light.ttf") format("truetype"), url("../fonts/RobotoMono-Light.woff") format("woff"), url("../fonts/RobotoMono-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -57,17 +27,7 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../fonts/RobotoMono-Regular.eot");
-  src: url("../fonts/RobotoMono-Regular.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-Regular.woff") format("woff");
-  src: url("../fonts/RobotoMono-Regular.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-Regular.otf") format("otf"), url("../fonts/RobotoMono-Regular.svg#RobotoMono-Regular") format("svg"), url("../fonts/RobotoMono-Regular.ttf") format("truetype"), url("../fonts/RobotoMono-Regular.woff") format("woff"), url("../fonts/RobotoMono-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -75,17 +35,7 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../fonts/RobotoMono-Medium.eot");
-  src: url("../fonts/RobotoMono-Medium.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-Medium.woff") format("woff");
-  src: url("../fonts/RobotoMono-Medium.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/RobotoMono-Medium.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-Medium.otf") format("otf"), url("../fonts/RobotoMono-Medium.svg#RobotoMono-Medium") format("svg"), url("../fonts/RobotoMono-Medium.ttf") format("truetype"), url("../fonts/RobotoMono-Medium.woff") format("woff"), url("../fonts/RobotoMono-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   text-rendering: optimizeLegibility;
@@ -93,50 +43,10 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../fonts/RobotoMono-SemiBold.eot");
-  src: url("../fonts/RobotoMono-SemiBold.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
-  /* IE6-IE8 */
-  src: url("../fonts/RobotoMono-SemiBold.woff") format("woff");
-  src: url("../fonts/RobotoMono-SemiBold.woff2") format("woff2");
-  /* Modern Browsers */
-  src: url("../fonts/RobotoMono-SemiBold.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  src: url("../fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMono-SemiBold.otf") format("otf"), url("../fonts/RobotoMono-SemiBold.svg#RobotoMono-SemiBold") format("svg"), url("../fonts/RobotoMono-SemiBold.ttf") format("truetype"), url("../fonts/RobotoMono-SemiBold.woff") format("woff"), url("../fonts/RobotoMono-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   text-rendering: optimizeLegibility;
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roomy-5";
-  src: url("../fonts/roomy-5.eot");
-  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
 }
 /* RESET */
 html, body, div, span, applet, object,
@@ -150,7 +60,7 @@ hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 0;
   color: #263E37;
-  font-family: "roomy-5", "RobotoMono", "Courier", sans-serif;
+  font-family: "roomy", "RobotoMono", "Courier", sans-serif;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
