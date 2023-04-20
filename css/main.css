@@ -2,17 +2,17 @@
 /* FONTS */
 @font-face {
   font-family: "roomy";
-  src: url("./sass/fonts/roomy-6.eot");
-  src: url("./sass/fonts/roomy-6.otf") format("otf");
+  src: url("../fonts/roomy-6.eot");
+  src: url("../fonts/roomy-6.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/roomy-6.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/roomy-6.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/roomy-6.woff") format("woff");
-  src: url("./sass/fonts/roomy-6.woff2") format("woff2");
+  src: url("../fonts/roomy-6.woff") format("woff");
+  src: url("../fonts/roomy-6.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/roomy-6.ttf") format("truetype");
+  src: url("../fonts/roomy-6.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/roomy-6.svg#roomy") format("svg");
+  src: url("../fonts/roomy-6.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -20,17 +20,17 @@
 }
 @font-face {
   font-family: "roomy";
-  src: url("./sass/fonts/roomy-5.eot");
-  src: url("./sass/fonts/roomy-5.otf") format("otf");
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/roomy-5.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/roomy-5.woff") format("woff");
-  src: url("./sass/fonts/roomy-5.woff2") format("woff2");
+  src: url("../fonts/roomy-5.woff") format("woff");
+  src: url("../fonts/roomy-5.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/roomy-5.ttf") format("truetype");
+  src: url("../fonts/roomy-5.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/roomy-5.svg#roomy") format("svg");
+  src: url("../fonts/roomy-5.svg#roomy") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: bold;
@@ -38,17 +38,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./sass/fonts/RobotoMono-Light.eot");
-  src: url("./sass/fonts/RobotoMono-Light.otf") format("otf");
+  src: url("../fonts/RobotoMono-Light.eot");
+  src: url("../fonts/RobotoMono-Light.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/RobotoMono-Light.woff") format("woff");
-  src: url("./sass/fonts/RobotoMono-Light.woff2") format("woff2");
+  src: url("../fonts/RobotoMono-Light.woff") format("woff");
+  src: url("../fonts/RobotoMono-Light.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/RobotoMono-Light.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Light.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
+  src: url("../fonts/RobotoMono-Light.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 300;
@@ -56,17 +56,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./sass/fonts/RobotoMono-Regular.eot");
-  src: url("./sass/fonts/RobotoMono-Regular.otf") format("otf");
+  src: url("../fonts/RobotoMono-Regular.eot");
+  src: url("../fonts/RobotoMono-Regular.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/RobotoMono-Regular.woff") format("woff");
-  src: url("./sass/fonts/RobotoMono-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoMono-Regular.woff") format("woff");
+  src: url("../fonts/RobotoMono-Regular.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/RobotoMono-Regular.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
+  src: url("../fonts/RobotoMono-Regular.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -74,17 +74,17 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./sass/fonts/RobotoMono-Medium.eot");
-  src: url("./sass/fonts/RobotoMono-Medium.otf") format("otf");
+  src: url("../fonts/RobotoMono-Medium.eot");
+  src: url("../fonts/RobotoMono-Medium.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/RobotoMono-Medium.woff") format("woff");
-  src: url("./sass/fonts/RobotoMono-Medium.woff2") format("woff2");
+  src: url("../fonts/RobotoMono-Medium.woff") format("woff");
+  src: url("../fonts/RobotoMono-Medium.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/RobotoMono-Medium.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Medium.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
+  src: url("../fonts/RobotoMono-Medium.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 500;
@@ -92,21 +92,51 @@
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("./sass/fonts/RobotoMono-SemiBold.eot");
-  src: url("./sass/fonts/RobotoMono-SemiBold.otf") format("otf");
+  src: url("../fonts/RobotoMono-SemiBold.eot");
+  src: url("../fonts/RobotoMono-SemiBold.otf") format("otf");
   /* IE9 Compat Modes */
-  src: url("./sass/fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/RobotoMono-SemiBold.eot?#iefix") format("embedded-opentype");
   /* IE6-IE8 */
-  src: url("./sass/fonts/RobotoMono-SemiBold.woff") format("woff");
-  src: url("./sass/fonts/RobotoMono-SemiBold.woff2") format("woff2");
+  src: url("../fonts/RobotoMono-SemiBold.woff") format("woff");
+  src: url("../fonts/RobotoMono-SemiBold.woff2") format("woff2");
   /* Modern Browsers */
-  src: url("./sass/fonts/RobotoMono-SemiBold.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-SemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
-  src: url("./sass/fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
+  src: url("../fonts/RobotoMono-SemiBold.svg#RobotoMono") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 700;
   text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roomy-5";
+  src: url("../fonts/roomy-5.eot");
+  src: url("../fonts/roomy-5.eot?#iefix") format("embedded-opentype"), url("../fonts/roomy-5.otf") format("otf"), url("../fonts/roomy-5.svg#roomy-5") format("svg"), url("../fonts/roomy-5.ttf") format("truetype"), url("../fonts/roomy-5.woff") format("woff"), url("../fonts/roomy-5.woff2") format("woff2");
 }
 /* RESET */
 html, body, div, span, applet, object,
@@ -120,7 +150,7 @@ hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 0;
   color: #263E37;
-  font-family: "roomy", "Courier", sans-serif;
+  font-family: "roomy-5", "RobotoMono", "Courier", sans-serif;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -498,18 +528,10 @@ header .main-slider {
   width: 100%;
 }
 header .main-slider .slogan {
-  bottom: 45%;
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-}
-@media (max-width: 767px) {
-  header .main-slider .slogan {
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  transform: translate(-50%, -50%);
 }
 header .main-slider .slogan h2 {
   color: #fff;
@@ -1254,18 +1276,10 @@ header .main-slider {
   width: 100%;
 }
 header .main-slider .slogan {
-  bottom: 45%;
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-}
-@media (max-width: 767px) {
-  header .main-slider .slogan {
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  transform: translate(-50%, -50%);
 }
 header .main-slider .slogan h2 {
   color: #fff;
