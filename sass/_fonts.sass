@@ -1,21 +1,12 @@
 /* FONTS */
-$fonts: (roomy, roomy-6, normal, normal), (roomy, roomy-5, normal, bold), (RobotoMono, RobotoMono-Light, normal, 300), (RobotoMono, RobotoMono-Regular, normal, normal), (RobotoMono, RobotoMono-Medium, normal, 500), (RobotoMono, RobotoMono-SemiBold, normal, 700)
+$fonts: (roomy, roomy-6, normal, normal), (roomy, 'roomy-5', normal, bold), (RobotoMono, RobotoMono-Light, normal, 300), (RobotoMono, RobotoMono-Regular, normal, normal), (RobotoMono, RobotoMono-Medium, normal, 500), (RobotoMono, RobotoMono-SemiBold, normal, 700)
 
 @each $fontName, $fontFileName, $fontStyle, $fontWeight in $fonts
     @font-face
         font-family: '#{$fontName}'
-        src: url('./sass/fonts/#{$fontFileName}.eot')
-        src: url('./sass/fonts/#{$fontFileName}.otf') format('otf')
-        /* IE9 Compat Modes */
-        src: url('./sass/fonts/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        src: url('./sass/fonts/#{$fontFileName}.woff') format('woff'),
-        src: url('./sass/fonts/#{$fontFileName}.woff2') format('woff2'),
-        /* Modern Browsers */
-        src: url('./sass/fonts/#{$fontFileName}.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        src: url('./sass/fonts/#{$fontFileName}.svg##{$fontName}') format('svg')
-        /* Legacy iOS */
+        src: url('../fonts/#{$fontFileName}.eot')
+        src: url('../fonts/#{$fontFileName}.eot?#iefix') format('embedded-opentype'), url('../fonts/#{$fontFileName}.otf') format('otf'), url('../fonts/#{$fontFileName}.svg##{$fontFileName}') format('svg'), url('../fonts/#{$fontFileName}.ttf') format('truetype'), url('../fonts/#{$fontFileName}.woff') format('woff'), url('../fonts/#{$fontFileName}.woff2') format('woff2')
         font-style: #{$fontStyle}
         font-weight: #{$fontWeight}
         text-rendering: optimizeLegibility
+
