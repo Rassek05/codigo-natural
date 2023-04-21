@@ -9,11 +9,14 @@ section#what-we-do
         flex-direction: column
         text-align: left
 
+        +tablet
+            margin-left: 20px
+
         +mobile
             width: 100%
             margin: $mobile-space * 2 0
             padding: 0 $mobile-space
-    
+
         h2
             font-size: 26px
             display: flex
@@ -38,7 +41,7 @@ section#what-we-do
                 list-style: none
 
                 &:first-of-type
-                    
+
                     +mobile
                         margin-right: $mobile-space * 2
 
@@ -78,8 +81,8 @@ section#what-we-do
             justify-content: space-between
             width: 100%
             max-width: 600px
-            margin: 70px 0
-            
+            margin: 80px 0
+
             .icon 
                 display: flex
                 flex-direction: column
@@ -90,11 +93,11 @@ section#what-we-do
 
                     +mobile 
                         height: 50px
-                    
+
                 span
                     text-align: center
                     font-size: 15px
-                    
+
                     +mobile
                         font-size: 12px
     .image
@@ -142,7 +145,7 @@ section#what-we-do
             width: 100%
             position: absolute
             opacity: .2
-        
+
         .text-image
             position: absolute
             left: 50%
