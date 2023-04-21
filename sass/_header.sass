@@ -154,6 +154,9 @@ header
                             text-align: center
                             width: 212px
 
+                            +tablet
+                                width: 180px
+
                             &:before
                                 content: "• "
                                 opacity: 0
@@ -164,6 +167,9 @@ header
                         font-size: 11px
                         color: #000 !important
                         text-transform: uppercase
+
+                        +tablet
+                            font-size: 10px
 
         ul
             list-style: none
@@ -281,6 +287,9 @@ header
                 line-height: 60px
                 text-align: center
 
+                +tablet
+                    font-size: 50px
+
                 +mobile 
                     display: flex
                     font-size: 32px
@@ -335,7 +344,7 @@ header
 
             .bxslider
                 height: 100%
-                
+
                 li
                     height: 100%
 
@@ -344,7 +353,7 @@ header
                 border: 0
 
                 .bx-pager.bx-default-pager 
-                    
+
                     a
                         opacity: 1
 
