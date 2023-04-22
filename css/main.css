@@ -77,6 +77,9 @@ div {
 }
 
 /* GENERAL */
+body {
+  overflow-x: hidden;
+}
 body.unload {
   height: 100vh;
   width: 100vw;
@@ -449,6 +452,11 @@ header .main-slider .slogan h2 {
   font-weight: 700;
   line-height: 60px;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header .main-slider .slogan h2 {
+    font-size: 55px;
+  }
 }
 @media (max-width: 767px) {
   header .main-slider .slogan h2 {
@@ -1197,6 +1205,11 @@ header .main-slider .slogan h2 {
   font-weight: 700;
   line-height: 60px;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header .main-slider .slogan h2 {
+    font-size: 55px;
+  }
 }
 @media (max-width: 767px) {
   header .main-slider .slogan h2 {
