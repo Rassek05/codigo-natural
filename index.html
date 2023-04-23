@@ -37,12 +37,16 @@
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body data-link="#top" class="unload">
+<body data-link="#top" class="unloaded">
     <!-- LOADER -->
     <div id="loader">
         <div class="wall"></div>
         <div class="logo">
-            <img src="./imgs/logo-green.svg" alt="Código Natural">
+            <img 
+                src="./imgs/logo-green.svg"
+                alt="Código Natural - Logo"
+                class="animate__animated animate__fadeIn animated__slow"
+            >
         </div>
     </div>
 
@@ -51,6 +55,7 @@
             <div>
                 <p>contáctate por whatsapp o email para<br /> recibir nuestra lista de precios</p>
             </div>
+
             <ul>
                 <li>
                     <a href="#" data-link="#about-us"> Quiénes somos</a>
@@ -61,7 +66,9 @@
                 </li>
 
                 <li class="logo-nav">
-                    <a href="#"><h1>Código Natural</h1></a>
+                    <a href="/">
+                        <h1>Código Natural</h1>
+                    </a>
                 </li>
 
                 <li>
@@ -71,13 +78,14 @@
                     <a href="#" data-link="#contact">Contacto</a>
                 </li>
             </ul>
+
             <div class="btn-menu">
                 <span></span>
                 <span></span>
             </div>
 
             <a href="/" class="logo-mobile"></a>
-            <a class="logo-mobile-small"></a>
+            <a href="/" class="logo-mobile-small"></a>
         </nav>
 
         <div class="main-slider">
@@ -96,7 +104,7 @@
             </div>
 
             <div class="slogan">
-                <h2 class="animate__animated animate__fadeIn animate__delay-2s">
+                <h2 class="animate__animated animate__fadeIn animate__delay-2s animate__slow">
                     Lo natural <br class="show-mobile">
                     en su <br class="show-desktop" /> estado <br class="show-mobile">
                     más puro
@@ -110,7 +118,7 @@
         <div class="row no-gutters">
             <div id="info">
                 <div class="content">
-                    <p class="animate__animated animate__fadeIn animate__delay-3s animate__slow">
+                    <p class="animated-element" data-animate="animate__animated animate__fadeIn animate__slow">
                         Somos proveedores de Frutas y Hortalizas de cultivos comprometidos con el medioambiente.
                         Para protegerlo, sostenemos la importancia de consumir productos de estación, valorando así
                         el proceso natural del cultivo y colaborando con la reducción de la huella de carbono.
@@ -122,11 +130,23 @@
         </div>
 
         <div class="row no-gutters images">
-            <div class="col-7 col-md-6 col-lg-6">
-                <img src="imgs/CN_02.jpg" alt="Código Natural" class="animate__animated animate__fadeInUp animate__delay-3s animate__fast">
+            <div
+                class="col-7 col-md-6 col-lg-6 animated-element"
+                data-animate="animate__animated animate__fadeInUp animate__fast"
+            >
+                <img
+                    src="imgs/CN_02.jpg"
+                    alt="Código Natural"
+                >
             </div>
-            <div class="col-5 col-md-6 col-lg-6">
-                <img src="imgs/CN_03.jpg" alt="Código Natural" class="animate__animated animate__fadeInUp animate__delay-3s">
+            <div
+                class="col-5 col-md-6 col-lg-6 animated-element"
+                data-animate="animate__animated animate__fadeInUp"
+            >
+                <img
+                    src="imgs/CN_03.jpg"
+                    alt="Código Natural"
+                >
             </div>
         </div>
     </section>
@@ -134,87 +154,199 @@
     <!-- WHAT WE DO -->
     <section id="what-we-do">
         <div class="row no-gutters">
-            <div class="col-md-8">
+            <div id="what-we-do-1" class="col-md-8">
                 <div class="content">
-                    <h2 class="animate__animated animate__fadeInLeft animate__delay-4s">
-                        Conocemos y entendemos las necesidades de nuestros clientes. Nos especializamos en entidades como:
+                    <h2
+                        class="animated-element-custom"
+                        data-animate="animate__animated animate__fadeInLeft"
+                    >
+                        Conocemos y entendemos las necesidades de nuestros clientes. Nos especializamos en entidades
+                        como:
                     </h2>
 
                     <div class="lists">
                         <ul>
-                            <li class="animate__animated animate__fadeInLeft animate__delay-1s">Empresas</li>
-                            <li class="animate__animated animate__fadeInLeft animate__delay-2s">Restaurantes</li>
-                            <li class="animate__animated animate__fadeInLeft animate__delay-3s">Bares</li>
-                            <li class="animate__animated animate__fadeInLeft animate__delay-4s">Hoteles</li>
-                            <li class="animate__animated animate__fadeInLeft animate__delay-5s">Hospitales</li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInLeft animate__delay-1s"
+                            >
+                                Empresas
+                            </li>
+                            <li 
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInLeft animate__delay-2s"
+                            >
+                                Restaurantes
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInLeft animate__delay-3s"
+                            >
+                                Bares
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInLeft animate__delay-4s"
+                            >
+                                Hoteles
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInLeft animate__delay-5s"
+                            >
+                                Hospitales
+                            </li>
                         </ul>
                         <ul>
-                            <li class="animate__animated animate__fadeInUp animate__delay-1s">Escuelas</li>
-                            <li class="animate__animated animate__fadeInUp animate__delay-2s">Centros Comunitarios</li>
-                            <li class="animate__animated animate__fadeInUp animate__delay-3s">Hogares</li>
-                            <li class="animate__animated animate__fadeInUp animate__delay-4s">Supermercados</li>
-                            <li class="animate__animated animate__fadeInUp animate__delay-5s">Fábricas</li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInUp animate__delay-1s"
+                            >
+                                Escuelas
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInUp animate__delay-2s"
+                            >Centros
+
+                                Comunitarios
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInUp animate__delay-3s"
+                            >
+                                Hogares
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInUp animate__delay-4s"
+                            >
+                                Supermercados
+                            </li>
+                            <li
+                                class="animated-element-custom"
+                                data-animate="animate__animated animate__fadeInUp animate__delay-5s"
+                            >
+                                Fábricas
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="image">
+            <div id="what-we-do-2" class="image">
                 <div class="show-desktop">
                     <div class="row no-gutters">
-                        <img src="imgs/CN_08.jpg" alt="Imagen para Amenities" class="img-fluid col-6 animate__animated animate__fadeInUp animate__delay-4s">
-                        <img src="imgs/CN_09.jpg" alt="Imagen para Amenities" class="img-fluid col-6 animate__animated animate__fadeInDown animate__delay-4s">
+                        <img
+                            src="imgs/CN_08.jpg"
+                            alt="Código Natural"
+                            class="animated-element-custom img-fluid col-6"
+                            data-animate="animate__animated animate__fadeInLeft"
+                        >
+                        <img
+                            src="imgs/CN_09.jpg"
+                            alt="Código Natural"
+                            class="animated-element-custom img-fluid col-6"
+                            data-animate="animate__animated animate__fadeInRight"
+                        >
                     </div>
                 </div>
+
                 <div class="show-mobile">
-                    <img src="imgs/CN_08.jpg" alt="Imagen para Amenities" class="img-fluid animate__animated animate__fadeIn animate__delay-5s">
+                    <img src="imgs/CN_08.jpg" alt="Imagen para Amenities" class="animated-element img-fluid"
+                        data-animate="animate__animated-custom animate__fadeIn">
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="icons">
                     <div class="icon">
-                        <img src="imgs/quality.svg" alt="Imagen para Amenities" class="animate__animated animate__fadeInLeft animate__delay-4s animate__slow">
-                        <span class="animate__animated animate__fadeIn animate__delay-5s">Calidad</span>
+                        <img
+                            src="./imgs/quality.svg"
+                            alt="Imagen para Amenities"
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeInLeft animate__slow"
+                        >
+                        <span
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeIn"
+                        >
+                            Calidad
+                        </span>
                     </div>
                     <div class="icon">
-                        <img src="imgs/hands.svg" alt="Imagen para Amenities" class="animate__animated animate__fadeInDown animate__delay-4s animate__slow">
-                        <span class="animate__animated animate__fadeIn animate__delay-5s">Confianza</span>
+                        <img
+                            src="imgs/hands.svg"
+                            alt="Imagen para Amenities"
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeInDown animate__slow"
+                        >
+                        <span
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeIn"
+                        >
+                            Confianza
+                        </span>
                     </div>
                     <div class="icon">
-                        <img src="imgs/security.svg" alt="Imagen para Amenities" class="animate__animated animate__fadeInRight animate__delay-4s animate__slow" >
-                        <span class="animate__animated animate__fadeIn animate__delay-5s">Seguridad</span>
+                        <img 
+                            src="imgs/security.svg"
+                            alt="Imagen para Amenities"
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeInRight animate__slow">
+                        <span 
+                            class="animated-element"
+                            data-animate="animate__animated animate__fadeIn"
+                        >
+                            Seguridad
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="show-mobile">
-                <img src="imgs/CN_09.jpg" alt="Imagen para Amenities" class="img-fluid animate__animated animate__fadeIn animate__delay-5s">
+                <img src="imgs/CN_09.jpg" alt="Imagen para Amenities" class="animated-element img-fluid"
+                    data-animate="animate__animated animate__fadeIn animate__delay-1s">
             </div>
 
-            <div class="col-12">
+            <div class="col-12" id="what-we-do-3">
                 <div id="info">
                     <div class="info-content">
-                        <h2 class="animate__animated animate__fadeIn animate__delay-5s">
+                        <h2 
+                            class="animated-element-custom"
+                            data-animate="animate__animated animate__fadeIn animate__delay-3s"
+                        >
                             Nuestra misión es proveer de alimentos cultivados en la naturaleza
                             desde un proceso consciente y responsable, estableciendo un código de lenguaje entre
                             nuestros productos y nuestros clientes.
                         </h2>
                     </div>
                 </div>
+            </div>
 
+            <div class="col-12" id="what-we-do-4">
                 <div class="image">
-                    <div class="show-desktop animate__animated animate__fadeIn animate__delay-5s">
+                    <div
+                        class="animated-element-custom show-desktop"
+                        data-animate="animate__animated-custom animate__fadeIn animate__delay-1s"
+                    >
                         <div class="filter match"></div>
                         <img src="imgs/CN_05.jpg" alt="Codigo Natural" width="100%" class="match">
                     </div>
-                    <div class="show-mobile animate__animated animate__fadeIn animate__delay-5s">
+
+                    <div
+                        class="animated-element-custom show-mobile"
+                        data-animate="animate__animated animate__fadeIn animate__delay-1s"
+                    >
                         <div class="filter match"></div>
                         <img src="imgs/CN_10.jpg" alt="Codigo Natural " width="100%" class="match">
                     </div>
 
                     <div class="text-image">
-                        <h3 class="animate__animated animate__fadeInDown animate__delay-5s">
+                        <h3 
+                            class="animated-element-custom"
+                            data-animate="animate__animated animate__fadeInDown animate__delay-1s"
+                        >
                             Frutas y <br class="show-mobile" />
                             Hortalizas <br class="show-desktop" /> frescas, <br class="show-mobile" />
                             de calidad <br class="show-mobile" /> <br class="show-desktop" />
@@ -229,11 +361,17 @@
     <!-- Where we are -->
     <section id="where-we-are">
         <div class="row no-gutters">
-            <div class="col-md-6 match text">  
-                <h2 class="animate__animated animate__fadeInUp animate__delay-5s">
+            <div class="col-md-6 match text">
+                <h2
+                    class="animated-element-custom"
+                    data-animate="animate__animated animate__fadeInUp"
+                >
                     Encontranos en el <br> Mercado Central <br> de Buenos Aires
                 </h2>
-                <p class="animate__animated animate__fadeInDown animate__delay-5s">
+                <p
+                    class="animated-element-custom"
+                    data-animate="animate__animated animate__fadeInDown"
+                >
                     Donde llegan y se comercializan productos de toda la Argentina y el exterior. Es un punto
                     neurálgico y estratégico para realizar nuestro trabajo de manera efectiva, precisa y
                     ordenada.
@@ -241,7 +379,12 @@
             </div>
 
             <div class="col-md-6 map wrapper">
-                <div id="map" class="animate__animated animate__fadeIn animate__delay-2s"></div>
+                <div 
+                    id="map"
+                    class="animated-element-custom"
+                    data-animate="animate__animated animate__fadeInRight"
+                >
+                </div>
             </div>
         </div>
     </section>
@@ -251,35 +394,57 @@
         <div class="row no-gutters">
             <div id="info">
                 <div class="content">
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s">
-                        Contactános por <a href="https://wa.me/5491144047684">WhatsApp</a> o vía <a href="mailto:codigonatural.mcba@gmail.com"
-                            target="_blank">Email</a> para recibir nuestra lista de precios.
-                    <br />
-                    <br />
-                    Te invitamos a descargar el brochure.
-                </p>
+                    <p 
+                        class="animated-element"
+                        data-animate="animate__animated animate__fadeInUp"
+                    >
+                        Contactános por <a href="https://wa.me/5491144047684">WhatsApp</a> o vía <a
+                            href="mailto:codigonatural.mcba@gmail.com" target="_blank">Email</a> para recibir nuestra
+                        lista de precios.
+                        <br />
+                        <br />
+                        Te invitamos a descargar el brochure.
+                    </p>
 
-                <a href="./files/brochure.pdf" download="codigo_natural_brochure" class="brochure animate__animated animate__fadeInUp animate__delay-5s" target="_blank">DESCARGAR BROCHURE</a>
+                    <a
+                        href="./files/brochure.pdf"
+                        download="codigo_natural_brochure"
+                        class="animated-element brochure"
+                        data-animate="brochure animate__animated animate__fadeInUp"
+                        target="_blank"
+                    >
+                        DESCARGAR BROCHURE
+                    </a>
+                </div>
             </div>
-        </div>
     </section>
 
     <footer>
         <div class="row no-gutters">
             <div class="content-footer">
-                <div class="logo-footer animate__animated animate__fadeInUp animate__delay-5s">
+                <div 
+                    class="animated-element logo-footer"
+                    data-animate="animate__animated animate__fadeInUp"
+                >
                     <span background-image="../imgs/logo.footer.svg"></span>
                 </div>
 
                 <div class="text-footer">
-                    <h2 class="animate__animated animate__fadeInUp animate__delay-5s">
+                    <h2
+                        class="animated-element"
+                        data-animate="animate__animated animate__fadeInUp"
+                    >
                         Contacto <br>
                         <a href="mailto:codigonatural.mcba@gmail.com" target="_blank">codigonatural.mcba@gmail.com</a>
                         <br>
-                        <span></span> WhatsApp <a href="https://wa.me/5491144047684" target="_blank">+54 911 4404 7684</a> <br>
+                        <span></span> WhatsApp <a href="https://wa.me/5491144047684" target="_blank">+54 911 4404
+                            7684</a> <br>
                         <a href="https://wa.me/5491152479213" target="_blank">+54 911 5247 9213</a>
                     </h2>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s">
+                    <p 
+                        class="animated-element"
+                        data-animate="animate__animated animate__fadeInUp"
+                    >
                         ©2023 CódigoNatural.<br>
                         Todos los derechos reservados.
                     </p>
@@ -289,12 +454,10 @@
     </footer>
 
     <!-- JS -->
-    <!--
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVz1_uR7XN4dTUQPrdHh-K_tyb03wnXys&v=weekly"
         defer
     ></script>
-    -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/backstretch.min.js"></script>

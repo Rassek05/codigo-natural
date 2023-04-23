@@ -1,4 +1,4 @@
-// detect if mobile browser. regex -> http://detectmobilebrowsers.com
+// it detects if mobile browser. regex -> http://detectmobilebrowsers.com
 const isMobile = (function (a) {
   return (
     /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
@@ -20,7 +20,7 @@ const sliders = []
 $(window).load(function () {
   $(window).scrollTo(0, 250)
   setTimeout(() => {
-    $('body').removeClass('unload')
+    $('body').removeClass('unloaded')
   }, 1600)
 
   $('#loader').delay(1000).slideUp('slow')
@@ -38,7 +38,7 @@ $(window).load(function () {
 
   onScroll()
   setMainSlider()
-  
+
   // BxSlider reload
   sliders.forEach((slider) => slider.reloadSlider())
 })
@@ -149,6 +149,46 @@ function onScroll() {
       link.removeClass('active')
     }
   })
+
+  resetAnimatedElements()
+
+  $('.animated-element').each(function () {
+    const element = $(this)
+    const scrolledPosition = $(document).scrollTop() + $('header').height()
+
+    const isScrollOnElement = scrolledPosition > element.position().top
+    if (isScrollOnElement) {
+      element.addClass(element.data('animate'))
+    }
+  })
+
+  const customBlocks = ['#what-we-do-1', '#what-we-do-2', '#what-we-do-3', '#what-we-do-4', '#where-we-are']
+
+  customBlocks.forEach((customBlock) => {
+    const customBlockPositionTop = $(customBlock).position().top
+    const scrolledPosition = $(document).scrollTop() + $('header').height()
+    const isScrollOnBlock = scrolledPosition > customBlockPositionTop
+
+    if (isScrollOnBlock) {
+      console.log('animando', customBlock)
+      $('.animated-element-custom').each(function () {
+        const element = $(this)
+        element.addClass(element.data('animate'))
+      })
+    }
+  })
+}
+
+function resetAnimatedElements() {
+  if ($(document).scrollTop() === 0) {
+    $('.animated-element, .animated-element-custom').each(function () {
+      const animatedElement = $(this)
+      const animatedClasses = animatedElement.data('animate').split(' ')
+      animatedClasses.forEach((animatedClass) =>
+        animatedElement.removeClass(animatedClass)
+      )
+    })
+  }
 }
 
 function toggleMenu(btn) {
