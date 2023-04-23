@@ -444,6 +444,9 @@ header .main-slider .slogan {
   transform: translate(-50%, -50%);
 }
 header .main-slider .slogan h2 {
+  text-indent: -9000px;
+}
+header .main-slider .slogan p {
   color: #fff;
   font-size: 65px;
   font-weight: 700;
@@ -451,7 +454,7 @@ header .main-slider .slogan h2 {
   text-align: center;
 }
 @media (max-width: 767px) {
-  header .main-slider .slogan h2 {
+  header .main-slider .slogan p {
     display: flex;
     font-size: 32px;
     line-height: 28px;
@@ -1192,6 +1195,9 @@ header .main-slider .slogan {
   transform: translate(-50%, -50%);
 }
 header .main-slider .slogan h2 {
+  text-indent: -9000px;
+}
+header .main-slider .slogan p {
   color: #fff;
   font-size: 65px;
   font-weight: 700;
@@ -1199,7 +1205,7 @@ header .main-slider .slogan h2 {
   text-align: center;
 }
 @media (max-width: 767px) {
-  header .main-slider .slogan h2 {
+  header .main-slider .slogan p {
     display: flex;
     font-size: 32px;
     line-height: 28px;
@@ -1357,71 +1363,74 @@ section#contact .content a.brochure:hover, section#contact .content a.brochure:a
 }
 
 /* FOOTER */
-footer .content-footer {
+footer .content {
   width: 100%;
-  height: 270px;
   background-color: #263E37;
   display: flex;
   justify-content: space-between;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  footer .content-footer {
+  footer .content {
     padding-top: 10px;
   }
 }
 @media (max-width: 767px) {
-  footer .content-footer {
+  footer .content {
     flex-direction: column;
-    height: 380px;
     justify-content: start;
     padding-left: 30px;
     padding-top: 15px;
+    padding-bottom: 30px;
   }
 }
-footer .content-footer .logo-footer {
+footer .content .footer-logo {
   width: 130px;
   height: 114px;
   color: #fff;
   background: url(../imgs/logo-footer.png) center no-repeat;
   background-size: 130px;
   margin: 20px 0 0 50px;
+  display: block;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  footer .content-footer .logo-footer {
+  footer .content .footer-logo {
     background-size: 100px;
     max-width: 200px;
     max-height: 115px;
   }
 }
 @media (max-width: 767px) {
-  footer .content-footer .logo-footer {
+  footer .content .footer-logo {
     background-size: 100px;
     max-width: 100px;
     max-height: 100px;
     margin: 0;
   }
 }
-footer .content-footer .text-footer {
+footer .content .text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-right: 80px;
 }
-footer .content-footer .text-footer h2 {
+footer .content .text h2 {
+  text-indent: -9999px;
+}
+footer .content .text p:nth-of-type(1) {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: #fff;
 }
 @media (max-width: 767px) {
-  footer .content-footer .text-footer h2 {
+  footer .content .text p:nth-of-type(1) {
     margin-bottom: 120px;
   }
 }
-footer .content-footer .text-footer h2 a {
+footer .content .text p:nth-of-type(1) a {
   color: #fff;
 }
-footer .content-footer .text-footer h2 span {
+footer .content .text p:nth-of-type(1) span {
   display: inline-block;
   background: url(../imgs/icon-whatsapp.png) center no-repeat;
   background-size: 12px;
@@ -1429,7 +1438,7 @@ footer .content-footer .text-footer h2 span {
   height: 12px;
   margin-right: 2px;
 }
-footer .content-footer .text-footer p {
+footer .content .text p:nth-of-type(2) {
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -1437,7 +1446,7 @@ footer .content-footer .text-footer p {
   color: #fff;
 }
 @media (max-width: 767px) {
-  footer .content-footer .text-footer p {
+  footer .content .text p:nth-of-type(2) {
     font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

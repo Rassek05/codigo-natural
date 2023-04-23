@@ -1,31 +1,30 @@
 /* FOOTER */
 footer 
-  .content-footer 
+
+  .content
     width: 100%
-    height: 270px
     background-color: #263E37
     display: flex
     justify-content: space-between
-
 
     +tablet 
       padding-top: 10px
 
     +mobile 
       flex-direction: column
-      height: 380px
       justify-content: start
       padding-left: 30px
       padding-top: 15px
+      padding-bottom: 30px
 
-
-    .logo-footer
+    .footer-logo
       width: 130px
       height: 114px 
       color: #fff
       background: url(../imgs/logo-footer.png) center no-repeat
       background-size: 130px
       margin: 20px 0 0 50px
+      display: block
 
       +tablet
         background-size: 100px
@@ -38,39 +37,43 @@ footer
         max-height: 100px
         margin: 0
 
-    .text-footer
+    .text
       display: flex
       flex-direction: column
       justify-content: space-around
       padding-right: 80px
 
-
       h2
-        font-size: 14px
-        font-weight: 400
-        line-height: 22px
-        color: #fff
-  
-        +mobile
-          margin-bottom: 120px
-
-        a
-          color: #fff
-
-        span
-          display: inline-block
-          background: url(../imgs/icon-whatsapp.png) center no-repeat
-          background-size: 12px
-          width: 12px
-          height: 12px
-          margin-right: 2px
+        text-indent: -9999px
 
       p
-        font-size: 12px
-        font-weight: 300
-        line-height: 16px
-        font-family: "Roboto mono"
-        color: #fff
 
-        +mobile
-          font-size: 10px
+        &:nth-of-type(1)
+          font-size: 14px
+          font-weight: 400
+          line-height: 22px
+          color: #fff
+    
+          +mobile
+            margin-bottom: 120px
+
+          a
+            color: #fff
+
+          span
+            display: inline-block
+            background: url(../imgs/icon-whatsapp.png) center no-repeat
+            background-size: 12px
+            width: 12px
+            height: 12px
+            margin-right: 2px
+
+        &:nth-of-type(2)
+          font-size: 12px
+          font-weight: 300
+          line-height: 16px
+          font-family: "Roboto mono"
+          color: #fff
+
+          +mobile
+            font-size: 10px
