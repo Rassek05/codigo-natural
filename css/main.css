@@ -318,6 +318,11 @@ header nav.bar ul li.logo-nav a {
   text-align: center;
   width: 212px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav.bar ul li.logo-nav a {
+    width: 180px;
+  }
+}
 header nav.bar ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
@@ -328,6 +333,11 @@ header nav.bar ul li a {
   font-size: 11px;
   color: #000 !important;
   text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav.bar ul li a {
+    font-size: 10px;
+  }
 }
 header nav ul {
   list-style: none;
@@ -455,7 +465,7 @@ header .main-slider .slogan h2 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   header .main-slider .slogan h2 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -552,7 +562,7 @@ section#about-us #info {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 60px 0;
+  margin: 100px 0;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#about-us #info {
@@ -634,6 +644,11 @@ section#what-we-do .content {
   width: 305px;
   flex-direction: column;
   text-align: left;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  section#what-we-do .content {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 767px) {
   section#what-we-do .content {
@@ -718,7 +733,7 @@ section#what-we-do .wrapper .icons {
   justify-content: space-between;
   width: 100%;
   max-width: 600px;
-  margin: 70px 0;
+  margin: 80px 0;
 }
 section#what-we-do .wrapper .icons .icon {
   display: flex;
@@ -862,7 +877,12 @@ section#where-we-are .text h2 {
   font-weight: 700;
   line-height: 24px;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  section#where-we-are .text h2 {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 767px) {
   section#where-we-are .text h2 {
@@ -881,12 +901,13 @@ section#where-we-are .text p {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#where-we-are .text p {
     text-align: start;
     font-size: 13px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -1088,6 +1109,11 @@ header nav.bar ul li.logo-nav a {
   text-align: center;
   width: 212px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav.bar ul li.logo-nav a {
+    width: 180px;
+  }
+}
 header nav.bar ul li.logo-nav a:before {
   content: "• ";
   opacity: 0;
@@ -1098,6 +1124,11 @@ header nav.bar ul li a {
   font-size: 11px;
   color: #000 !important;
   text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav.bar ul li a {
+    font-size: 10px;
+  }
 }
 header nav ul {
   list-style: none;
@@ -1225,7 +1256,7 @@ header .main-slider .slogan h2 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   header .main-slider .slogan h2 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -1344,12 +1375,12 @@ section#contact .content {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section#contact .content {
-    margin-top: 10px;
+    margin: 60px 0;
   }
 }
 @media (max-width: 767px) {
   section#contact .content {
-    margin: 30px;
+    margin: 50px 30px;
   }
 }
 section#contact .content p {
@@ -1414,13 +1445,14 @@ footer .content-footer .logo-footer {
   color: #fff;
   background: url(../imgs/logo-footer.png) center no-repeat;
   background-size: 130px;
-  margin: 20px 0 0 50px;
+  margin: 20px 0 0 60px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   footer .content-footer .logo-footer {
     background-size: 100px;
     max-width: 200px;
     max-height: 115px;
+    margin-left: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -1435,7 +1467,12 @@ footer .content-footer .text-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 80px;
+  padding-right: 100px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .content-footer .text-footer {
+    padding-right: 50px;
+  }
 }
 footer .content-footer .text-footer h2 {
   font-size: 14px;
@@ -1446,10 +1483,17 @@ footer .content-footer .text-footer h2 {
 @media (max-width: 767px) {
   footer .content-footer .text-footer h2 {
     margin-bottom: 120px;
+    font-size: 12px;
   }
 }
 footer .content-footer .text-footer h2 a {
   color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  footer .content-footer .text-footer h2 a {
+    font-size: 12px;
+  }
 }
 footer .content-footer .text-footer h2 span {
   display: inline-block;
@@ -1460,7 +1504,7 @@ footer .content-footer .text-footer h2 span {
   margin-right: 2px;
 }
 footer .content-footer .text-footer p {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 300;
   line-height: 16px;
   font-family: "Roboto mono";
@@ -1468,6 +1512,7 @@ footer .content-footer .text-footer p {
 }
 @media (max-width: 767px) {
   footer .content-footer .text-footer p {
-    font-size: 10px;
+    font-size: 8px;
+    padding-bottom: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
