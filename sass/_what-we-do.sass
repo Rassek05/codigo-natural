@@ -47,13 +47,11 @@ section#what-we-do
                     font-family: 'RobotoMono'
                     font-weight: 400
                     line-height: 22px
-                  
 
         p
             margin-bottom: 25px
             max-width: 60%
             text-align: center
-
 
             &:last-of-type
                 margin-bottom: 0
@@ -72,7 +70,7 @@ section#what-we-do
         width: 100%
 
         +mobile
-            margin: $mobile-space * 1.25
+            padding: $mobile-space * 1.25
 
         .icons
             display: flex
@@ -81,7 +79,7 @@ section#what-we-do
             width: 100%
             max-width: 600px
             margin: 70px 0
-            
+
             .icon 
                 display: flex
                 flex-direction: column
@@ -92,11 +90,11 @@ section#what-we-do
 
                     +mobile 
                         height: 50px
-                    
+
                 span
                     text-align: center
                     font-size: 15px
-                    
+
                     +mobile
                         font-size: 12px
     .image
@@ -139,12 +137,26 @@ section#what-we-do
         padding: 0
         width: 100%
 
+        .parallax
+            background: url(../imgs/CN_05.jpg) center no-repeat
+            width: 100%
+            height: 50vh
+            background-attachment: fixed
+            background-size: cover
+
+            +mobile
+                background: url(../imgs/CN_10.jpg) center no-repeat
+                width: 100%
+                height: 50vh
+                background-attachment: fixed
+                background-size: cover
+
         .filter
             background-color: #000
             width: 100%
             position: absolute
             opacity: .2
-        
+
         .text-image
             position: absolute
             left: 50%

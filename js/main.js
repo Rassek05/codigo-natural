@@ -163,6 +163,7 @@ function onScroll() {
   })
 
   const customBlocks = ['#what-we-do-1', '#what-we-do-2', '#what-we-do-3', '#what-we-do-4', '#where-we-are']
+  // const customBlocks = ['#what-we-do-4']
 
   customBlocks.forEach((customBlock) => {
     const customBlockPositionTop = $(customBlock).position().top
@@ -171,7 +172,7 @@ function onScroll() {
 
     if (isScrollOnBlock) {
       console.log('animando', customBlock)
-      $('.animated-element-custom').each(function () {
+      $(`${customBlock} .animated-element-custom`).each(function () {
         const element = $(this)
         element.addClass(element.data('animate'))
       })
