@@ -684,7 +684,7 @@ section#what-we-do .content .lists {
 }
 section#what-we-do .content .lists ul {
   list-style: none;
-  --animate-delay: .5s;
+  --animate-delay: 0.25s;
 }
 @media (max-width: 767px) {
   section#what-we-do .content .lists ul:first-of-type {
