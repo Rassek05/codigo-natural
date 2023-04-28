@@ -177,6 +177,7 @@ header nav.scrolled {
 }
 header nav h1 {
   text-indent: -9999px;
+  height: 0;
 }
 header nav div {
   background-color: #263E37;
@@ -554,6 +555,10 @@ header .main-slider .slider .bx-wrapper .bx-pager-item {
 }
 
 /* ABOUT US SECTION */
+section#about-us h2 {
+  text-indent: -9999px;
+  height: 0;
+}
 section#about-us #info {
   background-color: #fff;
   display: flex;
@@ -637,6 +642,10 @@ section#about-us .images div:nth-of-type(2) img {
 section#what-we-do {
   margin-top: 0;
 }
+section#what-we-do h2 {
+  text-indent: -9999px;
+  height: 0;
+}
 section#what-we-do .content {
   display: flex;
   margin: 60px 0px 140px 40px;
@@ -656,7 +665,7 @@ section#what-we-do .content {
     padding: 0 30px;
   }
 }
-section#what-we-do .content h2 {
+section#what-we-do .content h3 {
   font-size: 26px;
   display: flex;
   font-weight: 700;
@@ -664,12 +673,12 @@ section#what-we-do .content h2 {
   margin-bottom: 50px;
 }
 @media (max-width: 767px) {
-  section#what-we-do .content h2 {
+  section#what-we-do .content h3 {
     font-size: 22px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#what-we-do .content h2 {
+  section#what-we-do .content h3 {
     margin-bottom: 30px;
   }
 }
@@ -747,12 +756,12 @@ section#what-we-do .wrapper .icons .icon img {
     height: 50px;
   }
 }
-section#what-we-do .wrapper .icons .icon span {
+section#what-we-do .wrapper .icons .icon h4 {
   text-align: center;
   font-size: 15px;
 }
 @media (max-width: 767px) {
-  section#what-we-do .wrapper .icons .icon span {
+  section#what-we-do .wrapper .icons .icon h4 {
     font-size: 12px;
   }
 }
@@ -783,14 +792,14 @@ section#what-we-do #info .info-content {
 section#what-we-do #info .info-content * mobile {
   max-width: 100%;
 }
-section#what-we-do #info .info-content h2 {
+section#what-we-do #info .info-content h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  section#what-we-do #info .info-content h2 {
+  section#what-we-do #info .info-content h3 {
     text-align: left;
     font-size: 24px;
   }
@@ -858,7 +867,11 @@ section#what-we-do .image .text-image h3 {
   }
 }
 
-/* WHERE WE ARE SECTION */
+/* WHERE WE ARE */
+section#where-we-are h2 {
+  text-indent: -9999px;
+  height: 0;
+}
 section#where-we-are .text {
   display: flex;
   flex-direction: column;
@@ -871,7 +884,7 @@ section#where-we-are .text {
     margin-bottom: 0;
   }
 }
-section#where-we-are .text h2 {
+section#where-we-are .text h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -879,19 +892,19 @@ section#where-we-are .text h2 {
   margin-left: 40px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  section#where-we-are .text h2 {
+  section#where-we-are .text h3 {
     margin-left: 20px;
   }
 }
 @media (max-width: 767px) {
-  section#where-we-are .text h2 {
+  section#where-we-are .text h3 {
     font-size: 20px;
     max-width: 250px;
     text-align: start;
     margin: 0;
     margin-bottom: 15px;
   }
-  section#where-we-are .text h2 br {
+  section#where-we-are .text h3 br {
     display: none;
   }
 }
@@ -967,6 +980,7 @@ header nav.scrolled {
 }
 header nav h1 {
   text-indent: -9999px;
+  height: 0;
 }
 header nav div {
   background-color: #263E37;
@@ -1344,6 +1358,10 @@ header .main-slider .slider .bx-wrapper .bx-pager-item {
 }
 
 /* CONTACT SECTION */
+section#contact h2 {
+  text-indent: -9999px;
+  height: 0;
+}
 section#contact #info {
   background-color: #CED6BC;
   display: flex;
